@@ -154,16 +154,16 @@ const Home = () => {
 
       <section className="bg-gray-50 py-16 border-t border-gray-200">
         <div className="max-w-[1512px] mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Stat 1 */}
             <div>
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
                 Cost Reduction
               </p>
-              <p className="text-3xl md:text-4xl font-light text-gray-900 mb-2">
+              <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 25-30%
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-[#0A0A0A]/60">
                 Lower input costs vs traditional methods
               </p>
             </div>
@@ -173,11 +173,11 @@ const Home = () => {
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
                 Yield Improvement
               </p>
-              <p className="text-3xl md:text-4xl font-light text-gray-900 mb-2">
+              <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 10-15%
               </p>
-              <p className="text-sm text-gray-600">
-                Average yield increase across crops
+              <p className="text-sm text-[#0A0A0A]/60">
+                Better plant immunity and growth lead to higher overall yield.
               </p>
             </div>
 
@@ -186,10 +186,10 @@ const Home = () => {
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
                 Product Range
               </p>
-              <p className="text-3xl md:text-4xl font-light text-gray-900 mb-2">
+              <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 04
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-[#0A0A0A]/60">
                 Countries with active distribution
               </p>
             </div>
@@ -199,10 +199,10 @@ const Home = () => {
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
                 Crop Coverage
               </p>
-              <p className="text-3xl md:text-4xl font-light text-gray-900 mb-2">
+              <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 All Crops
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-[#0A0A0A]/60">
                 Suitable for various crop types
               </p>
             </div>
@@ -239,7 +239,7 @@ const Home = () => {
               <h3 className="text-2xl font-medium text-gray-900 mb-[10px]">
                 The Problem with Chemical Farming
               </h3>
-              <p className="text-sm text-gray-600 mb-6">
+              <p className="text-sm text-[#0A0A0A] mb-6">
                 Chemicals in the field of farming are only for the management of
                 pests and diseases.
               </p>
@@ -300,7 +300,7 @@ const Home = () => {
               <h3 className="text-2xl font-medium text-gray-900 mb-[10px]">
                 The Power of Plant-Based Products
               </h3>
-              <p className="text-sm text-gray-600 mb-6">
+              <p className="text-sm text-[#0A0A0A] mb-6">
                 Plant extracts have sustainable,safe, and biodegradable mode of
                 action, making them ideal for sustainable agriculture.
               </p>
@@ -376,7 +376,7 @@ const Home = () => {
               <h2 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-6">
                 What We Stand For
               </h2>
-              <p className="text-gray-600 leading-relaxed mb-10">
+              <p className="text-[#0A0A0A] leading-relaxed mb-10">
                 Vyoma Life Sciences is committed to developing solutions
                 designed with herbal crop protection that supports farmers, soil
                 health, consumers, and the environment.
@@ -405,7 +405,7 @@ const Home = () => {
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Sustainable Crop Protection
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
                       We aim to replace chemical pesticides by empowering
                       farmers with herbal solutions that protect crops without
                       harming soil fertility or health.
@@ -434,7 +434,7 @@ const Home = () => {
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Environmental & Animal Safety
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
                       Our plant-based formulations protect crops while
                       preserving groundwater, pollinators, beneficial insects,
                       livestock, and ecological balance.
@@ -463,7 +463,7 @@ const Home = () => {
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Residue-Free Food Production
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
                       We envision a farming ecosystem where food is clean and
                       managed naturally, providing safer produce free of toxic
                       residues for consumers.
@@ -492,7 +492,7 @@ const Home = () => {
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Standing Unique
                     </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
+                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
                       Farmers, peers, animals, and people deserve safety: our
                       products are designed to sustain life, not to disrupt it.
                     </p>
@@ -611,7 +611,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Farmers Big Economic Advantage
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
                     <li>Reduce input cost by 25–30% per acre</li>
                     <li>Achieve 10–15% increase in yield</li>
                     <li>Safer handling and a healthier farming environment</li>
@@ -628,7 +628,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Agri-Input Dealers / Retailers
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
                     <li>
                       Can offer clean, herbal alternatives alongside chemical
                       portfolios
@@ -650,7 +650,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     FPOs & Farmer Cooperatives
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
                     <li>
                       Suitable for group farming programs and organic/natural
                       initiatives
@@ -672,7 +672,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Institutions, NGOs & Sustainable Farming Projects
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
                     <li>
                       Ideal for programs promoting residue-free agriculture,
                       regenerative farming, and soil health restoration
@@ -857,7 +857,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Continuous Research
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                  <div className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
                     We constantly improve and refine formulations using updated
                     agricultural research, extensive crop trials, and continuous
                     farmer feedback from real field conditions.
@@ -878,7 +878,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Innovation-Driven
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                  <div className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
                     Our R&D team actively tracks new diseases, pests, and farm
                     stress patterns, creating customized herbal remedies for
                     emerging agricultural challenges effectively.
@@ -899,7 +899,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Science-Backed Solutions
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-base text-gray-600">
+                  <div className="list-disc list-inside space-y-1 text-base text-[#0A0A0A]">
                     Every product undergoes scientific validation, combining
                     Ayurvedic knowledge with modern agricultural science to
                     ensure reliable, consistent, and high-performance results
@@ -921,7 +921,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Standing Unique
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-base text-gray-600">
+                  <div className="list-disc list-inside space-y-1 text-base text-[#0A0A0A]">
                     We specialize in custom, problem-specific herbal solutions
                     that support sustainable farming, reduce chemical
                     dependency, and deliver long-term ecological safety
