@@ -27,7 +27,7 @@ export default function Navbar() {
           </Link>
 
           {/* Nav Links */}
-          <ul className="hidden md:flex items-center gap-10 text-gray-700">
+          <ul className="hidden md:flex items-center gap-10 text-[#0A0A0A] text-sm font-medium">
             <li>
               <Link href="/" className="hover:text-green-700">
                 Home
@@ -63,7 +63,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <Link
             href="/contact"
-            className="hidden md:block bg-black text-white px-5 py-2 rounded-lg hover:bg-gray-800"
+            className="hidden md:block bg-black font-semibold text-white px-5 py-2 hover:bg-gray-800"
           >
             Get In Touch
           </Link>
