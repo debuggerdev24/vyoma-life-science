@@ -8,7 +8,7 @@ import {
   Target,
 } from "lucide-react";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
@@ -858,6 +858,11 @@ export default function Home() {
             <h2 className="text-[56px] leading-[65px] text-[#0A0A0A]">
               Innovation & Sustainability
             </h2>
+            <div className="text-[#0A0A0A]">
+              We combine Ayurvedic wisdom with modern research to create
+              science-backed herbal crop protection solutions that are safe,
+              effective, and future-ready.
+            </div>
             <div className="flex flex-col gap-10 mt-[60px]">
               {/* Value 1 */}
               <div className="flex items-start gap-4">
@@ -943,4 +948,5 @@ export default function Home() {
       </section>
     </div>
   );
-}
+};
+export default Home;
