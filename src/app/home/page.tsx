@@ -26,10 +26,10 @@ const Home = () => {
 
         {/* Content */}
         <div className="relative z-10 flex items-center min-h-screen">
-          <div className="w-full max-w-7xl mx-auto px-6 md:px-12 py-20">
-            <div className="max-w-2xl">
+          <div className="w-full max-w-[1512px] mx-auto px-6 md:px-12 py-20">
+            <div className="max-w-[821px]">
               {/* Main Heading */}
-              <h1 className="text-5xl md:text-6xl font-normal text-white leading-tight mb-6">
+              <h1 className="text-[5xl] md:text-6xl font-normal text-white leading-tight mb-6">
                 Herbal Crop Protection for
                 <br />
                 Sustainable Farming.
@@ -42,42 +42,30 @@ const Home = () => {
                 farmers, soil, and the environment.
               </p>
             </div>
+            <div className="w-full flex flex-wrap gap-4 justify-between">
+              <div className="flex gap-4">
+                <button className="px-6 py-3 bg-[#FDB714] hover:bg-[#e5a612] text-white font-medium rounded transition-colors">
+                  View Products
+                </button>
+                <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium rounded transition-colors">
+                  Talk to Our Expert
+                </button>
+              </div>
+
+              <div className="flex gap-2 items-center text-white text-xl font-normal">
+                <img src="/mouse.png" alt="explore more" className="w-6 h-6" />
+                <span>Explore More</span>
+              </div>
+            </div>
           </div>
 
           {/* CTA Buttons */}
-          <div className="w-full px-24 absolute bottom-8 flex flex-wrap gap-4 justify-between">
-            <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#FDB714] hover:bg-[#e5a612] text-white font-medium rounded transition-colors">
-                View Products
-              </button>
-              <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium rounded transition-colors">
-                Talk to Our Expert
-              </button>
-            </div>
-
-            <div className="flex gap-2 text-white">
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-              <span>Explore More</span>
-            </div>
-          </div>
         </div>
       </div>
 
       {/* Logos Section */}
       <section className="bg-white py-12 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="max-w-[1512px] mx-auto px-6 md:px-12">
           <div className="flex flex-wrap items-center justify-between gap-8 md:gap-12">
             <img
               className="h-10 opacity-40 grayscale"
@@ -111,7 +99,7 @@ const Home = () => {
 
       {/* About Section */}
       <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="max-w-[1512px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Left Column */}
             <div>
@@ -165,7 +153,7 @@ const Home = () => {
       </section>
 
       <section className="bg-gray-50 py-16 border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="max-w-[1512px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* Stat 1 */}
             <div>
@@ -224,10 +212,16 @@ const Home = () => {
 
       {/* Chemical vs Herbal Comparison Section */}
       <section className="bg-[#F6F7F1] py-20">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div className="mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-[1512px] mx-auto px-6 md:px-24 relative">
+            {/* Wheat Illustration */}
+            <img
+              className="absolute bottom-0 left-0 max-w-[450px]"
+              src="/wheat.png"
+              alt=""
+            />
             {/* Left Column - Why Move Beyond Chemicals */}
-            <div className="flex flex-col">
+            <div className="flex flex-col relative">
               <p className="text-xs text-gray-500 uppercase tracking-wide mb-4">
                 Why Move Beyond Chemicals?
               </p>
@@ -238,41 +232,35 @@ const Home = () => {
                 <br />
                 Solutions
               </h2>
-              {/* Wheat Illustration */}
-              <div className="mt-auto">
-                <img src="/wheat.png" alt="Wheat" />
-              </div>
             </div>
 
             {/* Middle Column - The Problem with Chemical Farming */}
-            <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-light text-gray-900 mb-6">
-                The Problem with Chemical
-                <br />
-                Farming
+            <div className="bg-white p-8 rounded-lg max-w-[419px]">
+              <h3 className="text-2xl font-medium text-gray-900 mb-[10px]">
+                The Problem with Chemical Farming
               </h3>
               <p className="text-sm text-gray-600 mb-6">
                 Chemicals in the field of farming are only for the management of
                 pests and diseases.
               </p>
 
-              <div className="space-y-4">
-                <p className="text-sm font-medium text-gray-900 mb-3">
+              <div className="mt-[30px]">
+                <p className="text-base font-semibold text-[#0A0A0A] mb-[5px]">
                   Problems / pain points
                 </p>
                 <ul className="space-y-3 text-sm text-gray-700">
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Short-term solutions to farmers with issues reoccurring
-                      leading to more diseases
+                      Direct health hazards to farmers: skin issues, headaches,
+                      toxicity, and chronic illnesses
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Soil degradation leading to declining fertility and soil
-                      health
+                      Soil degradation leading to declining fertility and
+                      biological activity
                     </span>
                   </li>
                   <li className="flex items-start">
@@ -285,25 +273,22 @@ const Home = () => {
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Health-related problems in farmers and in workers
-                    </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-400 mr-2">•</span>
-                    <span>Chemical exposure</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-400 mr-2">•</span>
-                    <span>
-                      Excess of pesticides, fertilizers and towards birds and
-                      beneficial insects
+                      Development of pest resistance due to repeated chemical
+                      exposure
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Higher crop input cost due expenses and rising
-                      input/fertilizer cost
+                      Decline in pollinators, beneficial insects, birds, and
+                      biodiversity
+                    </span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-gray-400 mr-2">•</span>
+                    <span>
+                      Higher long-term input dependency and rising production
+                      cost
                     </span>
                   </li>
                 </ul>
@@ -311,25 +296,23 @@ const Home = () => {
             </div>
 
             {/* Right Column - The Power of Plant-Based Products */}
-            <div className="bg-white p-8 rounded-lg">
-              <h3 className="text-2xl font-light text-gray-900 mb-6">
-                The Power of Plant-Based
-                <br />
-                Products
+            <div className="bg-white p-8 rounded-lg max-w-[419px] mt-[80px]">
+              <h3 className="text-2xl font-medium text-gray-900 mb-[10px]">
+                The Power of Plant-Based Products
               </h3>
               <p className="text-sm text-gray-600 mb-6">
                 Plant extracts have sustainable,safe, and biodegradable mode of
                 action, making them ideal for sustainable agriculture.
               </p>
 
-              <div className="space-y-4">
-                <p className="text-sm font-medium text-gray-900 mb-3">
+              <div className="mt-[30px]">
+                <p className="text-base font-semibold text-[#0A0A0A] mb-[5px]">
                   Advantages / benefits
                 </p>
                 <ul className="space-y-3 text-sm text-gray-700">
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
-                    <span>Environmental friendly with less impact</span>
+                    <span>Safe for farmers to handle and apply</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
@@ -341,32 +324,29 @@ const Home = () => {
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Less harmful to non-target species like bees and
-                      beneficial insects
+                      Strengthens plant immunity to handle pests and diseases
+                      naturally
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Enhances water retention and reduces soil erosion concerns
+                      Enhances water retention and reduces soil stress
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Safer exposure for those who handle and apply these
-                      products
+                      Enables residue-free food production that’s safer for
+                      consumers
                     </span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
-                      Protecting both human and environmental biodiversity only
+                      Protects pollinators and supports biodiversity while
+                      increasing yield
                     </span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-gray-400 mr-2">•</span>
-                    <span>Biodegradable</span>
                   </li>
                 </ul>
               </div>
@@ -377,7 +357,7 @@ const Home = () => {
 
       {/* What We Stand For Section */}
       <section className="bg-white py-20">
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="max-w-[1512px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
             <div className="relative">
@@ -1017,11 +997,16 @@ const Home = () => {
                     Are these products safe for organic or natural farming?
                   </span>
                 </div>
-                <div className="w-6 h-6 rounded-full bg-black flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
-                  <span className="text-white text-xl font-light">+</span>
+                <div className="w-[46px] h-[46px] rounded-full group-open:bg-black flex border border-[#0A0A0A4D] items-center justify-center flex-shrink-0">
+                  <span className="text-black text-xl font-light group-open:hidden">
+                    +
+                  </span>
+                  <span className="text-white text-xl font-light hidden group-open:block">
+                    -
+                  </span>
                 </div>
               </summary>
-              <div className="pb-6 pl-[105px] pr-10">
+              <div className="pb-6 pl-[105px] pr-10 max-w-[800px]">
                 <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70">
                   Yes. Our formulations are plant-extract-based and suitable for
                   organic, natural, and integrated farming systems. They leave
@@ -1038,17 +1023,22 @@ const Home = () => {
                   <span className="text-[#0A0A0A] font-medium opacity-[64%] text-[25px] leading-10">
                     02
                   </span>
-                  <span className="text-[#0A0A0A] font-light text-3xl">
+                  <span className="text-[#0A0A0A] font-light text-3xl max-w-[800px]">
                     Can they be used along with fertilizers or existing crop
                     programs?
                   </span>
                 </div>
-                <div className="w-6 h-6 rounded-full bg-black flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
-                  <span className="text-white text-xl font-light">+</span>
+                <div className="w-[46px] h-[46px] rounded-full group-open:bg-black flex border border-[#0A0A0A4D] items-center justify-center flex-shrink-0">
+                  <span className="text-black text-xl font-light group-open:hidden">
+                    +
+                  </span>
+                  <span className="text-white text-xl font-light hidden group-open:block">
+                    -
+                  </span>
                 </div>
               </summary>
               <div className="pb-6 pl-[105px] pr-10">
-                <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70">
+                <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70 max-w-[700px]">
                   Absolutely. Our products are compatible with most fertilizers
                   and can be integrated into existing crop protection programs.
                   They work synergistically to enhance overall plant health and
@@ -1064,16 +1054,21 @@ const Home = () => {
                   <span className="text-[#0A0A0A] font-medium opacity-[64%] text-[25px] leading-10">
                     03
                   </span>
-                  <span className="text-[#0A0A0A] font-regular text-3xl">
+                  <span className="text-[#0A0A0A] font-regular text-3xl max-w-[800px]">
                     Which crops do your products support?
                   </span>
                 </div>
-                <div className="w-6 h-6 rounded-full bg-black flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
-                  <span className="text-white text-xl font-light">+</span>
+                <div className="w-[46px] h-[46px] rounded-full group-open:bg-black flex border border-[#0A0A0A4D] items-center justify-center flex-shrink-0">
+                  <span className="text-black text-xl font-light group-open:hidden">
+                    +
+                  </span>
+                  <span className="text-white text-xl font-light hidden group-open:block">
+                    -
+                  </span>
                 </div>
               </summary>
               <div className="pb-6 pl-[105px] pr-10">
-                <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70">
+                <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70 max-w-[700px]">
                   Our products support a wide range of crops including
                   vegetables (tomato, chili, brinjal), fruits (grapes, mango,
                   pomegranate), grains (wheat, rice), sugarcane, and plantation
@@ -1090,16 +1085,21 @@ const Home = () => {
                   <span className="text-[#0A0A0A] font-medium opacity-[64%] text-[25px] leading-10">
                     04
                   </span>
-                  <span className="text-[#0A0A0A] font-regular text-3xl">
+                  <span className="text-[#0A0A0A] font-regular text-3xl max-w-[800px]">
                     How do I apply the products via spray or soil?
                   </span>
                 </div>
-                <div className="w-6 h-6 rounded-full bg-black flex items-center justify-center flex-shrink-0 transition-transform group-open:rotate-45">
-                  <span className="text-white text-xl font-light">+</span>
+                <div className="w-[46px] h-[46px] rounded-full group-open:bg-black flex border border-[#0A0A0A4D] items-center justify-center flex-shrink-0">
+                  <span className="text-black text-xl font-light group-open:hidden">
+                    +
+                  </span>
+                  <span className="text-white text-xl font-light hidden group-open:block">
+                    -
+                  </span>
                 </div>
               </summary>
               <div className="pb-6 pl-[105px] pr-10">
-                <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70">
+                <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70 max-w-[700px]">
                   Application methods vary by product. MITRA and RUDRA are
                   typically applied as foliar sprays. ARKA can be used for seed
                   treatment, soil application, or foliar spray. JIVA is applied
@@ -1111,7 +1111,7 @@ const Home = () => {
           </div>
         </div>
         {/* Farming Knowledge Section */}
-        <div className="max-w-7xl mx-auto px-6 md:px-12 mb-[110px]">
+        <div className="max-w-[1512px] mx-auto px-6 md:px-12 mb-[110px]">
           {/* Section Header */}
           <div className="flex flex-col items-center text-center mb-16">
             <div className="text-[#0A0A0A]/70 font-semibold text-sm">
