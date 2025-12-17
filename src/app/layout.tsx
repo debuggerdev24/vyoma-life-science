@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 import type { ReactNode } from "react";
-import Footer from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Instrument_Sans } from "next/font/google";
 
 const instrumentSans = Instrument_Sans({
