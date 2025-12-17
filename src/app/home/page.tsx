@@ -145,8 +145,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-white py-28 max-w-[1512px]">
-        <div className="max-w-[1320px] mx-auto px-6 md:px-12">
+      <section className="bg-white py-28 max-w-[1512px] mx-auto">
+        <div className="max-w-[1320px] mx-auto ">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Stat 1 */}
             <div>
