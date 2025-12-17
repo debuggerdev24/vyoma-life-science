@@ -7,9 +7,10 @@ export default function Navbar() {
   return (
     <header className="w-full">
       {/* Top Alert Bar */}
-      <div className="w-full bg-green-900 text-white text-sm py-[13px] text-center shadow-sm">
+      <div className="flex justify-center w-full bg-[#1F4E3D] text-white text-xs py-[13px] text-center shadow-sm font-medium">
         📢 Reduce your input costs by up to 25–30% per acre with our herbal crop
-        solutions. Talk to our expert
+        solutions.
+        <p className="font-bold">Talk to our expert</p>
       </div>
 
       {/* Main Navbar */}
@@ -63,7 +64,7 @@ export default function Navbar() {
           {/* CTA Button */}
           <Link
             href="/contact"
-            className="hidden md:block bg-black font-semibold text-white px-5 py-2 hover:bg-gray-800"
+            className="hidden md:block bg-black font-semibold text-white text-sm px-5 py-2 hover:bg-gray-800"
           >
             Get In Touch
           </Link>

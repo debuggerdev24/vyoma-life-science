@@ -25,18 +25,18 @@ const Home = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 flex items-center min-h-screen">
+        <div className="relative z-10 flex items-center min-h-screen top-16">
           <div className="w-full max-w-[1512px] mx-auto px-6 md:px-12 py-20">
             <div className="max-w-[821px]">
               {/* Main Heading */}
-              <h1 className="text-[5xl] md:text-6xl font-normal text-white leading-tight mb-6">
+              <h1 className="text-7xl leading-[80px] font-normal text-white mb-6 tracking-[-4px]">
                 Herbal Crop Protection for
                 <br />
                 Sustainable Farming.
               </h1>
 
               {/* Description */}
-              <p className="text-white/90 text-base md:text-lg leading-relaxed mb-8 max-w-xl">
+              <p className="text-white/90 text-xl mb-8 max-w-[785px]">
                 Plant-extract based solutions that boost crop immunity, protect
                 yields, and reduce dependency on harmful chemicals safe for
                 farmers, soil, and the environment.
@@ -64,36 +64,29 @@ const Home = () => {
       </div>
 
       {/* Logos Section */}
-      <section className="bg-white py-12 border-b border-gray-200">
-        <div className="max-w-[1512px] mx-auto px-6 md:px-12">
-          <div className="flex flex-wrap items-center justify-between gap-8 md:gap-12">
-            <img
-              className="h-10 opacity-40 grayscale"
-              src="/cargill.png"
-              alt="Cargill"
-            />
-            <img
-              className="h-10 opacity-40 grayscale"
-              src="/syngenta.png"
-              alt="Syngenta"
-            />
-            <img
-              className="h-10 opacity-40 grayscale"
-              src="/corteva.png"
-              alt="Corteva"
-            />
-            <img className="h-10 opacity-40 grayscale" src="/cf.png" alt="CF" />
-            <img
-              className="h-10 opacity-40 grayscale"
-              src="/vital.png"
-              alt="vital"
-            />
-            <img
-              className="h-10 opacity-40 grayscale"
-              src="/LouisDreyfus.png"
-              alt="Louis Dreyfus"
-            />
-          </div>
+      <section className="bg-white flex border-b border-[#E5E7DE] w-full mx-auto justify-center">
+        <div className="px-[30px] py-[60px] border-r border-[#E5E7DE]">
+          <img className="h-20 w-full" src="/cargill.png" alt="Cargill" />
+        </div>
+        <div className="px-[30px] py-[60px] border-r border-[#E5E7DE]">
+          <img className="h-20 w-full" src="/syngenta.png" alt="Syngenta" />
+        </div>
+
+        <div className="px-[30px] py-[60px] border-r border-[#E5E7DE]">
+          <img src="/corteva.png" className="h-20 w-full" alt="Corteva" />
+        </div>
+        <div className="px-[30px] py-[60px] border-r border-[#E5E7DE]">
+          <img src="/cf.png" className="h-20 w-full" alt="CF" />
+        </div>
+        <div className="px-[30px] py-[60px] border-r border-[#E5E7DE]">
+          <img src="/vital.png" className="h-20 w-full" alt="vital" />
+        </div>
+        <div className="px-[30px] py-[60px] ">
+          <img
+            src="/LouisDreyfus.png"
+            className="h-20 w-full"
+            alt="Louis Dreyfus"
+          />
         </div>
       </section>
 
@@ -103,10 +96,10 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             {/* Left Column */}
             <div>
-              <p className="text-sm text-gray-500 uppercase tracking-wide mb-4">
+              <p className="text-sm font-semibold text-[#0A0A0AB2] uppercase tracking-wide mb-4">
                 About Vyoma Life Sciences
               </p>
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-8">
+              <h2 className="text-4xl md:text-5xl font-medium text-[#0A0A0A] ">
                 Innovating the Future
                 <br />
                 of Agriculture
@@ -115,7 +108,7 @@ const Home = () => {
 
             {/* Right Column */}
             <div className="space-y-6">
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-[#0A0A0A] text-xl font-normal">
                 Vyoma Life Sciences develops plant-extract-based alternatives to
                 conventional chemicals used in agriculture and in daily-use
                 hygiene and healthcare products. The company was born out of a
@@ -124,14 +117,14 @@ const Home = () => {
                 the environment around them.
               </p>
 
-              <p className="text-gray-700 leading-relaxed">
+              <p className="text-[#0A0A0A] text-xl font-normal">
                 At the heart of Vyoma's work is research and innovation. Using
                 cutting-edge technologies in plant extraction, they develop
                 unique alternatives that address emerging pests and diseases,
                 and can be adapted as new challenges appear in the field.
               </p>
 
-              <button className="inline-flex items-center text-gray-900 font-medium mt-4 hover:text-gray-700 transition-colors">
+              <button className="inline-flex items-center text-[#0A0A0A] font-semibold pt-[50px] text-base hover:text-gray-700 transition-colors">
                 Explore More
                 <svg
                   className="w-5 h-5 ml-2"
@@ -152,58 +145,58 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-gray-50 py-16 border-t border-gray-200">
-        <div className="max-w-[1512px] mx-auto px-6 md:px-12">
+      <section className="bg-white py-28 max-w-[1512px]">
+        <div className="max-w-[1320px] mx-auto px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Stat 1 */}
             <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
+              <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
                 Cost Reduction
               </p>
               <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 25-30%
               </p>
-              <p className="text-sm text-[#0A0A0A]/60">
+              <p className="text-base font-normal text-[#0A0A0A]/60">
                 Lower input costs vs traditional methods
               </p>
             </div>
 
             {/* Stat 2 */}
             <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
+              <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
                 Yield Improvement
               </p>
               <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 10-15%
               </p>
-              <p className="text-sm text-[#0A0A0A]/60">
+              <p className="text-base font-normal text-[#0A0A0A]/60">
                 Better plant immunity and growth lead to higher overall yield.
               </p>
             </div>
 
             {/* Stat 3 */}
             <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
+              <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
                 Product Range
               </p>
               <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 04
               </p>
-              <p className="text-sm text-[#0A0A0A]/60">
-                Countries with active distribution
+              <p className="text-base font-normal text-[#0A0A0A]/60">
+                Four herbal solutions for viruses, fungi, pests, growth.
               </p>
             </div>
 
             {/* Stat 4 */}
             <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-2">
+              <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
                 Crop Coverage
               </p>
               <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
                 All Crops
               </p>
-              <p className="text-sm text-[#0A0A0A]/60">
-                Suitable for various crop types
+              <p className="text-base font-normal text-[#0A0A0A]/60">
+                Works effectively across vegetables, fruits, grains, and paddy.
               </p>
             </div>
           </div>
@@ -211,35 +204,35 @@ const Home = () => {
       </section>
 
       {/* Chemical vs Herbal Comparison Section */}
-      <section className="bg-[#F6F7F1] py-20">
+      <section className="bg-[#F6F7F1] py-28">
         <div className="mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-[1512px] mx-auto px-6 md:px-24 relative">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 max-w-[1512px] mx-auto px-6 md:px-24 relative">
             {/* Wheat Illustration */}
             <img
-              className="absolute bottom-0 left-0 max-w-[450px]"
+              className="absolute top-20 left-0 max-w-[450px]"
               src="/wheat.png"
               alt=""
             />
             {/* Left Column - Why Move Beyond Chemicals */}
             <div className="flex flex-col relative">
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-4">
+              <p
+                className="text-sm text-[#0A0A0AB2] 
+              font-semibold"
+              >
                 Why Move Beyond Chemicals?
               </p>
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-6">
-                Chemical
-                <br />
-                Inputs vs Herbal
-                <br />
-                Solutions
+              <h2 className="text-[56px] font-normal text-[#0A0A0A] leading-[64px] tracking-[-4px]">
+                Chemical <br />
+                Inputs vs Herbal Solutions
               </h2>
             </div>
 
             {/* Middle Column - The Problem with Chemical Farming */}
-            <div className="bg-white p-8 rounded-lg max-w-[419px]">
-              <h3 className="text-2xl font-medium text-gray-900 mb-[10px]">
+            <div className="bg-white p-[30px] rounded-lg max-w-[419px]">
+              <h3 className="text-2xl font-medium text-[#0A0A0A] mb-[10px]">
                 The Problem with Chemical Farming
               </h3>
-              <p className="text-sm text-[#0A0A0A] mb-6">
+              <p className="text-sm font-normal text-[#0A0A0A]/60 mb-[30px]">
                 Chemicals in the field of farming are only for the management of
                 pests and diseases.
               </p>
@@ -248,7 +241,7 @@ const Home = () => {
                 <p className="text-base font-semibold text-[#0A0A0A] mb-[5px]">
                   Problems / pain points
                 </p>
-                <ul className="space-y-3 text-sm text-gray-700">
+                <ul className="font-normal text-sm text-[#0A0A0A]/60">
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>
@@ -296,11 +289,11 @@ const Home = () => {
             </div>
 
             {/* Right Column - The Power of Plant-Based Products */}
-            <div className="bg-white p-8 rounded-lg max-w-[419px] mt-[80px]">
-              <h3 className="text-2xl font-medium text-gray-900 mb-[10px]">
+            <div className="bg-white p-[30px] rounded-lg max-w-[419px] mt-[80px]">
+              <h3 className="text-2xl font-medium text-[#0A0A0A] mb-[10px]">
                 The Power of Plant-Based Products
               </h3>
-              <p className="text-sm text-[#0A0A0A] mb-6">
+              <p className="text-sm font-normal text-[#0A0A0A]/60 mb-[30px]">
                 Plant extracts have sustainable,safe, and biodegradable mode of
                 action, making them ideal for sustainable agriculture.
               </p>
@@ -309,7 +302,7 @@ const Home = () => {
                 <p className="text-base font-semibold text-[#0A0A0A] mb-[5px]">
                   Advantages / benefits
                 </p>
-                <ul className="space-y-3 text-sm text-gray-700">
+                <ul className="font-normal text-sm text-[#0A0A0A]/60">
                   <li className="flex items-start">
                     <span className="text-gray-400 mr-2">•</span>
                     <span>Safe for farmers to handle and apply</span>
@@ -364,19 +357,19 @@ const Home = () => {
               <img
                 src="/farmer.png"
                 alt="Farmer in field"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-[621px] h-[826px] rounded-lg shadow-lg"
               />
             </div>
 
             {/* Right Column - Content */}
-            <div>
-              <p className="text-xs text-gray-500 uppercase tracking-wide mb-4">
-                Our Values
+            <div className="">
+              <p className="text-sm font-semibold text-[#0A0A0AB2]  ">
+                Our Vision
               </p>
-              <h2 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-6">
+              <h2 className="text-4xl md:text-5xl font-light text-gray-900 leading-tight mb-[5px]">
                 What We Stand For
               </h2>
-              <p className="text-[#0A0A0A] leading-relaxed mb-10">
+              <p className="text-[#0A0A0A]/60 font-normal text-base mb-[50px]">
                 Vyoma Life Sciences is committed to developing solutions
                 designed with herbal crop protection that supports farmers, soil
                 health, consumers, and the environment.
@@ -386,26 +379,18 @@ const Home = () => {
               <div className="space-y-6">
                 {/* Value 1 */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 6v6m0 0v6m0-6h6m-6 0H6"
-                      />
-                    </svg>
+                  <div className="w-[60px] h-[60px] bg-[#EABE0D] rounded-full flex items-center justify-center flex-shrink-0">
+                    <img
+                      src="/recycle.png"
+                      alt="Crop Protection"
+                      className="h-[30px] w-[30px]"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Sustainable Crop Protection
                     </h3>
-                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
+                    <p className="text-base font-normal text-[#0A0A0A]/60 leading-relaxed">
                       We aim to replace chemical pesticides by empowering
                       farmers with herbal solutions that protect crops without
                       harming soil fertility or health.
@@ -415,9 +400,9 @@ const Home = () => {
 
                 {/* Value 2 */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-[60px] h-[60px] bg-[#EABE0D] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
-                      className="w-6 h-6 text-white"
+                      className="w-[30px] h-[30px] text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -434,7 +419,7 @@ const Home = () => {
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Environmental & Animal Safety
                     </h3>
-                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
+                    <p className="text-base font-normal text-[#0A0A0A]/60">
                       Our plant-based formulations protect crops while
                       preserving groundwater, pollinators, beneficial insects,
                       livestock, and ecological balance.
@@ -444,26 +429,18 @@ const Home = () => {
 
                 {/* Value 3 */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
+                  <div className="w-[60px] h-[60px] bg-[#EABE0D] rounded-full flex items-center justify-center flex-shrink-0">
+                    <img
+                      src="/plant.png"
+                      alt="Plant"
+                      className="w-[30px] h-[30px]"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Residue-Free Food Production
                     </h3>
-                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
+                    <p className="text-base font-normal text-[#0A0A0A]/60">
                       We envision a farming ecosystem where food is clean and
                       managed naturally, providing safer produce free of toxic
                       residues for consumers.
@@ -473,26 +450,18 @@ const Home = () => {
 
                 {/* Value 4 */}
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-6 h-6 text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                      />
-                    </svg>
+                  <div className="w-[60px] h-[60px] bg-[#EABE0D] rounded-full flex items-center justify-center flex-shrink-0">
+                    <img
+                      src="/heart.png"
+                      alt="heart"
+                      className="w-[30px] h-[30px]"
+                    />
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gray-900 mb-1">
                       Standing Unique
                     </h3>
-                    <p className="text-sm text-[#0A0A0A] leading-relaxed">
+                    <p className="text-base font-normal text-[#0A0A0A]/60">
                       Farmers, peers, animals, and people deserve safety: our
                       products are designed to sustain life, not to disrupt it.
                     </p>
@@ -597,8 +566,10 @@ const Home = () => {
       <section className="bg-white">
         <div className="grid grid-cols-2 max-w-[1512px] mx-auto px-6 md:px-24 py-[110px] gap-[65px]">
           <div className="flex flex-col min-w-fit">
-            <div className="font-semibold text-sm">Who We Support</div>
-            <h2 className="text-[56px] leading-[65px] text-[#0A0A0A]">
+            <div className="font-semibold text-base text-[#0A0A0AB2]">
+              Who We Support
+            </div>
+            <h2 className="text-[56px] leading-[65px] font-normal text-[#0A0A0A]">
               Who Benefits From Our Solutions
             </h2>
             <div className="flex flex-col gap-10 mt-[60px]">
@@ -611,7 +582,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Farmers Big Economic Advantage
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
+                  <ul className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     <li>Reduce input cost by 25–30% per acre</li>
                     <li>Achieve 10–15% increase in yield</li>
                     <li>Safer handling and a healthier farming environment</li>
@@ -628,7 +599,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Agri-Input Dealers / Retailers
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
+                  <ul className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     <li>
                       Can offer clean, herbal alternatives alongside chemical
                       portfolios
@@ -650,7 +621,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     FPOs & Farmer Cooperatives
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
+                  <ul className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     <li>
                       Suitable for group farming programs and organic/natural
                       initiatives
@@ -672,7 +643,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Institutions, NGOs & Sustainable Farming Projects
                   </h3>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
+                  <ul className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     <li>
                       Ideal for programs promoting residue-free agriculture,
                       regenerative farming, and soil health restoration
@@ -684,7 +655,11 @@ const Home = () => {
           </div>
 
           <div>
-            <img src="/farmer2.png" alt="farmer" />
+            <img
+              src="/farmer2.png"
+              alt="farmer"
+              className="h-[922px] w-[621px]"
+            />
           </div>
         </div>
       </section>
@@ -703,11 +678,13 @@ const Home = () => {
             alt=""
           />
           <div className="flex flex-col justify-center items-center">
-            <div className="font-semibold text-sm">Our Products</div>
+            <div className="font-semibold text-sm text-[#0A0A0AB2]">
+              Our Products
+            </div>
             <div className="text-[56px]">
               Botanical Extracts Crop Protection Range
             </div>
-            <div className="flex text-center text-[#0A0A0A] text-sm max-w-[650px] mt-[10px]">
+            <div className="flex text-center text-[#0A0A0A]/60 text-sm font-normal max-w-[650px] mt-[10px]">
               A curated range of four scientifically developed herbal
               formulations designed to boost plant immunity, support growth, and
               protect crops from diseases and pests safely and sustainably.
@@ -829,16 +806,20 @@ const Home = () => {
       <section className="bg-white">
         <div className="grid grid-cols-2 max-w-[1512px] mx-auto px-6 md:px-24 py-[110px] gap-[65px]">
           <div>
-            <img src="/farmer3.png" alt="farmer" />
+            <img
+              src="/farmer3.png"
+              alt="farmer"
+              className="h-[922px] w-[621px]"
+            />
           </div>
           <div className="flex flex-col min-w-fit">
-            <div className="font-semibold text-sm">
+            <div className="font-semibold text-sm text-[#0A0A0AB2]">
               Botanical Extracts Innovation Lab
             </div>
-            <h2 className="text-[56px] leading-[65px] text-[#0A0A0A]">
+            <h2 className="text-[56px] leading-[65px] text-[#0A0A0A] tracking-[-4px]">
               Innovation & Sustainability
             </h2>
-            <div className="text-[#0A0A0A]">
+            <div className="text-[#0A0A0A]/60 text-base font-normal">
               We combine Ayurvedic wisdom with modern research to create
               science-backed herbal crop protection solutions that are safe,
               effective, and future-ready.
@@ -857,7 +838,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Continuous Research
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
+                  <div className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     We constantly improve and refine formulations using updated
                     agricultural research, extensive crop trials, and continuous
                     farmer feedback from real field conditions.
@@ -878,7 +859,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Innovation-Driven
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-sm text-[#0A0A0A]">
+                  <div className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     Our R&D team actively tracks new diseases, pests, and farm
                     stress patterns, creating customized herbal remedies for
                     emerging agricultural challenges effectively.
@@ -899,7 +880,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Science-Backed Solutions
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-base text-[#0A0A0A]">
+                  <div className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     Every product undergoes scientific validation, combining
                     Ayurvedic knowledge with modern agricultural science to
                     ensure reliable, consistent, and high-performance results
@@ -921,7 +902,7 @@ const Home = () => {
                   <h3 className="text-lg font-medium text-gray-900 mb-1">
                     Standing Unique
                   </h3>
-                  <div className="list-disc list-inside space-y-1 text-base text-[#0A0A0A]">
+                  <div className="list-disc list-inside space-y-1 text-base font-normal text-[#0A0A0A]/60">
                     We specialize in custom, problem-specific herbal solutions
                     that support sustainable farming, reduce chemical
                     dependency, and deliver long-term ecological safety
@@ -937,7 +918,7 @@ const Home = () => {
           <div className="text-[47px] leading-[50px] text-[#0A0A0A]">
             Yield Boost
           </div>
-          <div className="text-center mt-5">
+          <div className="text-center text-[23px] font-normal mt-5 text-[#0A0A0ACC]">
             “JIVA improved flowering and fruit holding dramatically. Flower drop
             reduced, fruit size increased, and yield was noticeably higher in
             our tomato farm compared to last season.”
@@ -1114,7 +1095,7 @@ const Home = () => {
         <div className="max-w-[1512px] mx-auto px-6 md:px-12 mb-[110px]">
           {/* Section Header */}
           <div className="flex flex-col items-center text-center mb-16">
-            <div className="text-[#0A0A0A]/70 font-semibold text-sm">
+            <div className="text-[#0A0A0AB2] font-semibold text-sm">
               Latest Updates
             </div>
             <h2 className="text-[40px] font-light text-[#0A0A0A] mb-3">
@@ -1354,7 +1335,7 @@ const Home = () => {
                     <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
                       State
                     </label>
-                    <select className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm text-gray-500 focus:outline-none focus:border-[#1F4E3D] transition-colors">
+                    <select className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm text-[#0A0A0A] focus:outline-none focus:border-[#1F4E3D] transition-colors">
                       <option>Select state</option>
                       <option>Maharashtra</option>
                       <option>Karnataka</option>
@@ -1366,7 +1347,7 @@ const Home = () => {
                     <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
                       Crop
                     </label>
-                    <select className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm text-gray-500 focus:outline-none focus:border-[#1F4E3D] transition-colors">
+                    <select className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm text-[#0A0A0A] focus:outline-none focus:border-[#1F4E3D] transition-colors">
                       <option>What crop you growing?</option>
                       <option>Tomato</option>
                       <option>Rice</option>
