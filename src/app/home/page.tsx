@@ -914,7 +914,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center items-center max-w-[850px] px-2 mx-auto">
+        <div className="flex flex-col justify-center items-center max-w-[850px] px-2 mx-auto mb-[110px]">
           <div className="text-[47px] leading-[50px] text-[#0A0A0A]">
             Yield Boost
           </div>
