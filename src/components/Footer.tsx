@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="w-full bg-black text-white pt-12 ">
       <div className="container relative overflow-y-hidden mx-auto ">
         {/* Top Section */}
-        <div className="flex gap-[213px] mb-[100px] px-6">
+        <div className="flex gap-[213px] mb-[60px] px-6">
           {/* Left Column */}
           <div className="max-w-[312px]">
             <div className="flex items-center gap-3 mb-4">

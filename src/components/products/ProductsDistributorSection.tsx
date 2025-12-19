@@ -1,0 +1,53 @@
+export default function ProductsDistributorSection() {
+  return (
+    <section className="w-full grid md:grid-cols-2">
+      {/* Left Section - Yellow */}
+      <div className="bg-[#E8C132] px-8 md:px-16 py-16 md:py-20 flex flex-col items-center justify-center">
+        <div className="max-w-md text-center">
+          <h2 className="text-[32px] md:text-[40px] leading-tight font-normal text-black mb-6">
+            Find products available in your country/area
+          </h2>
+          <p className="text-base md:text-[17px] leading-relaxed text-black mb-8">
+            Select your country or area to explore our products available in
+            your region. Discover tailored solutions designed to meet your needs
+            and drive success.
+          </p>
+          <div className="relative w-full max-w-xs mx-auto">
+            <select className="w-full bg-white text-gray-500 px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-black">
+              <option>Select your state</option>
+              <option>Maharashtra</option>
+              <option>Gujarat</option>
+              <option>Karnataka</option>
+              <option>Tamil Nadu</option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+              <svg
+                className="fill-current h-4 w-4"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right Section - Green */}
+      <div className="bg-[#2C5F4F] px-8 md:px-16 py-16 md:py-20 flex flex-col items-center justify-center">
+        <div className="max-w-md text-center">
+          <h2 className="text-[32px] md:text-[40px] leading-tight font-normal text-white mb-6">
+            Are you a distributor or represent a company?
+          </h2>
+          <p className="text-base md:text-[17px] leading-relaxed text-white mb-8">
+            View our complete product portfolio and connect with us to explore
+            opportunities for growth and partnership. Let's grow together!
+          </p>
+          <button className="bg-[#E8C132] text-black font-medium text-sm px-8 py-4 hover:bg-[#d4af2b] transition-colors">
+            Explore and connect
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
