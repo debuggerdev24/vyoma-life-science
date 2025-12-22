@@ -1,13 +1,13 @@
 export default function ProductsDistributorSection() {
   return (
-    <section className="w-full grid md:grid-cols-2">
+    <section className="max-w-[1320px] mx-auto grid md:grid-cols-2">
       {/* Left Section - Yellow */}
-      <div className="bg-[#E8C132] px-8 md:px-16 py-16 md:py-20 flex flex-col items-center justify-center">
-        <div className="max-w-md text-center">
-          <h2 className="text-[32px] md:text-[40px] leading-tight font-normal text-black mb-6">
+      <div className="bg-[#E8C132] px-[50px] py-[50px] flex flex-col items-center justify-center">
+        <div className="max-w-[560px] text-center">
+          <h2 className="text-[40px] leading-[50px] font-normal text-[#0A0A0A] mb-5">
             Find products available in your country/area
           </h2>
-          <p className="text-base md:text-[17px] leading-relaxed text-black mb-8">
+          <p className="text-xl leading-[150%] text-[#0A0A0ACC] mb-10 ">
             Select your country or area to explore our products available in
             your region. Discover tailored solutions designed to meet your needs
             and drive success.
@@ -34,16 +34,16 @@ export default function ProductsDistributorSection() {
       </div>
 
       {/* Right Section - Green */}
-      <div className="bg-[#2C5F4F] px-8 md:px-16 py-16 md:py-20 flex flex-col items-center justify-center">
-        <div className="max-w-md text-center">
-          <h2 className="text-[32px] md:text-[40px] leading-tight font-normal text-white mb-6">
+      <div className="bg-[#2C5F4F] px-[50px] py-[50px] flex flex-col items-center justify-center">
+        <div className="max-w-[560px] text-center">
+          <h2 className="text-[40px] leading-tight font-normal text-white mb-6">
             Are you a distributor or represent a company?
           </h2>
-          <p className="text-base md:text-[17px] leading-relaxed text-white mb-8">
+          <p className="text-xl text-white mb-10">
             View our complete product portfolio and connect with us to explore
             opportunities for growth and partnership. Let's grow together!
           </p>
-          <button className="bg-[#E8C132] text-black font-medium text-sm px-8 py-4 hover:bg-[#d4af2b] transition-colors">
+          <button className="bg-[#E8C132] text-white font-medium text-sm px-8 py-4 hover:bg-[#d4af2b] transition-colors">
             Explore and connect
           </button>
         </div>

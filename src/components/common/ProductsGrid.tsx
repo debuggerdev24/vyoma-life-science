@@ -1,3 +1,7 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 interface Tag {
   label: string;
   bgColor: string;
@@ -5,6 +9,7 @@ interface Tag {
 }
 
 interface Product {
+  slug: string;
   name: string;
   subtitle: string;
   image: string;
@@ -27,6 +32,12 @@ const ProductsGrid = ({
   products,
   paddingClasses = "py-[110px]",
 }: ProductsGridProps) => {
+  const router = useRouter();
+
+  const handleProductClick = (slug: string) => {
+    router.push(`/productDetail/${slug}`);
+  };
+
   return (
     <section className="bg-[#F6F7F1]">
       <div
@@ -52,7 +63,11 @@ const ProductsGrid = ({
           </div>
           <div className="grid grid-cols-4 z-10 mt-[70px] gap-9">
             {products.map((product, index) => (
-              <div key={index} className="flex flex-col bg-white">
+              <div
+                key={index}
+                className="flex flex-col bg-white cursor-pointer hover:shadow-lg transition-shadow"
+                onClick={() => handleProductClick(product.slug)}
+              >
                 <img
                   className=""
                   src={product.image}
@@ -76,7 +91,7 @@ const ProductsGrid = ({
                   <div className="text-xs text-[#0a0a0aa2] mt-[10px] mb-[50px]">
                     {product.description}
                   </div>
-                  <div className="flex w-full bg-[#1F4E3D] text-white text-sm font-semibold justify-center items-center mt-auto py-[15px] hover:cursor-pointer">
+                  <div className="flex w-full bg-[#1F4E3D] text-white text-sm font-semibold justify-center items-center mt-auto py-[15px]">
                     know more
                   </div>
                 </div>

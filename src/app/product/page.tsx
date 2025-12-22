@@ -12,9 +12,9 @@ const Products = () => {
       {/* Content container */}
       <div className="relative">
         {/* Sticky distributor section */}
-        {/* <div className="sticky top-0 z-20">
+        <div className="absolute mx-auto w-full -top-56 z-20 px-24">
           <ProductsDistributorSection />
-        </div> */}
+        </div>
 
         {/* Rest of the content */}
         <div className="relative z-10">

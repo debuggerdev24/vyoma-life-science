@@ -4,6 +4,7 @@ const ProductsSection = () => {
   const products = [
     {
       name: "MITRA",
+      slug: "mitra",
       subtitle: "Viral Immunity Booster",
       image: "/mitra.png",
       tags: [
@@ -23,6 +24,7 @@ const ProductsSection = () => {
     },
     {
       name: "ARKA",
+      slug: "arka",
       subtitle: "Fungal & Bacterial Immunity Booster",
       image: "/arka.png",
       tags: [
@@ -47,6 +49,7 @@ const ProductsSection = () => {
     },
     {
       name: "JIVA",
+      slug: "jiva",
       subtitle: "Growth Promoter & Immunity Booster",
       image: "/jiva.png",
       tags: [
@@ -61,6 +64,7 @@ const ProductsSection = () => {
     },
     {
       name: "RUDRA",
+      slug: "rudra",
       subtitle: "Plant Protector Against Pests",
       image: "/arka.png",
       tags: [
