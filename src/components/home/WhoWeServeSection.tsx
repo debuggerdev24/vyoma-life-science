@@ -20,68 +20,68 @@ const WhoWeServeSection = () => {
         {/* Grid Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 lg:gap-x-[31px] lg:gap-y-0 w-full">
           <div className="flex flex-col bg-white p-6 md:p-[30px] h-fit">
-            <div className="bg-[#1F4E3D] p-[10px] w-fit mb-5 md:mb-[29px]">
+            <div className="bg-[#1F4E3D] p-[15px] w-fit mb-5 md:mb-[29px]">
               <img src="/leaf.png" alt="Vegetables" className="w-10 h-10" />
             </div>
-            <div className="font-semibold text-base mb-2">Vegetables</div>
-            <div className="text-sm text-[#0A0A0A]">
+            <div className="font-semibold text-base mb-[5px]">Vegetables</div>
+            <div className="text-sm text-[#0A0A0A] font-normal">
               Tomato, chilli, brinjal, okra, cabbage, cauliflower, and many
               other vegetables supported.
             </div>
           </div>
 
           <div className="flex flex-col bg-white p-6 md:p-[30px] h-fit lg:mt-20">
-            <div className="bg-[#1F4E3D] p-[10px] w-fit mb-5 md:mb-[29px]">
+            <div className="bg-[#1F4E3D] p-[15px] w-fit mb-5 md:mb-[29px]">
               <img src="/apple.png" alt="Fruits" className="w-10 h-10" />
             </div>
-            <div className="font-semibold text-base mb-2">Fruits</div>
-            <div className="text-sm text-[#0A0A0A]">
+            <div className="font-semibold text-base mb-[5px]">Fruits</div>
+            <div className="text-sm text-[#0A0A0A] font-normal">
               Grapes, mango, banana, pomegranate, citrus, watermelon, and
               multiple seasonal fruit crops.
             </div>
           </div>
 
           <div className="flex flex-col bg-white p-6 md:p-[30px] h-fit">
-            <div className="bg-[#1F4E3D] p-[10px] w-fit mb-5 md:mb-[29px]">
+            <div className="bg-[#1F4E3D] p-[15px] w-fit mb-5 md:mb-[29px]">
               <img src="/grains.png" alt="Grains" className="w-10 h-10" />
             </div>
-            <div className="font-semibold text-base mb-2">Grains & Paddy</div>
-            <div className="text-sm text-[#0A0A0A]">
+            <div className="font-semibold text-base mb-[5px]">Grains & Paddy</div>
+            <div className="text-sm text-[#0A0A0A] font-normal">
               Wheat, rice, millets, and maize cultivated under diverse regional
               farming conditions.
             </div>
           </div>
 
           <div className="flex flex-col bg-white p-6 md:p-[30px] h-fit">
-            <div className="bg-[#1F4E3D] p-[10px] w-fit mb-5 md:mb-[29px]">
+            <div className="bg-[#1F4E3D] p-[15px] w-fit mb-5 md:mb-[29px]">
               <img src="/leaf.png" alt="Sugarcane" className="w-10 h-10" />
             </div>
-            <div className="font-semibold text-base mb-2">Sugarcane</div>
-            <div className="text-sm text-[#0A0A0A]">
+            <div className="font-semibold text-base mb-[5px]">Sugarcane</div>
+            <div className="text-sm text-[#0A0A0A] font-normal">
               Improves sugarcane growth, strength, disease resistance, and
               overall field productivity consistently.
             </div>
           </div>
 
           <div className="flex flex-col bg-white p-6 md:p-[30px] h-fit lg:mt-20">
-            <div className="bg-[#1F4E3D] p-[10px] w-fit mb-5 md:mb-[29px]">
+            <div className="bg-[#1F4E3D] p-[15px] w-fit mb-5 md:mb-[29px]">
               <img src="/Flower.png" alt="Floriculture" className="w-10 h-10" />
             </div>
-            <div className="font-semibold text-base mb-2">
+            <div className="font-semibold text-base mb-[5px]">
               Horticulture & Floriculture
             </div>
-            <div className="text-sm text-[#0A0A0A]">
+            <div className="text-sm text-[#0A0A0A] font-normal">
               Rose, marigold, chrysanthemum, orchid, and flowering crops receive
               excellent protection naturally.
             </div>
           </div>
 
           <div className="flex flex-col bg-white p-6 md:p-[30px] h-fit">
-            <div className="bg-[#1F4E3D] p-[10px] w-fit mb-5 md:mb-[29px]">
+            <div className="bg-[#1F4E3D] p-[15px] w-fit mb-5 md:mb-[29px]">
               <img src="/leaf.png" alt="Plantation" className="w-10 h-10" />
             </div>
-            <div className="font-semibold text-base mb-2">Plantation Crops</div>
-            <div className="text-sm text-[#0A0A0A]">
+            <div className="font-semibold text-base mb-[5px]">Plantation Crops</div>
+            <div className="text-sm text-[#0A0A0A] font-normal">
               Tea, coffee, cocoa, and rubber plantations stay healthy with
               continuous immunity support.
             </div>
