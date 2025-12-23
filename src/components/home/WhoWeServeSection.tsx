@@ -65,7 +65,7 @@ const WhoWeServeSection = () => {
 
           <div className="flex flex-col bg-white p-6 md:p-[30px] h-fit lg:mt-20">
             <div className="bg-[#1F4E3D] p-[10px] w-fit mb-5 md:mb-[29px]">
-              <img src="/flower.png" alt="Floriculture" className="w-10 h-10" />
+              <img src="/Flower.png" alt="Floriculture" className="w-10 h-10" />
             </div>
             <div className="font-semibold text-base mb-2">
               Horticulture & Floriculture
