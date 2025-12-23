@@ -85,6 +85,7 @@ const ProductsSection = () => {
       title="Botanical Extracts Crop Protection Range"
       description="A curated range of four scientifically developed herbal formulations designed to boost plant immunity, support growth, and protect crops from diseases and pests safely and sustainably."
       products={products}
+      variant="default"
     />
   );
 };

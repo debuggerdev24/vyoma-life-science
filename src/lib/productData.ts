@@ -22,13 +22,13 @@ export const products: Product[] = [
     tags: [
       {
         label: "Viral Diseases",
-        bgColor: "bg-[#AF2B24]/10",
-        textColor: "text-[#AF2B24]",
+        bgColor: "bg-[#AF2B24]",
+        textColor: "text-white",
       },
       {
         label: "Preventive & Curative",
-        bgColor: "bg-[#AF2B24]/10",
-        textColor: "text-[#AF2B24]",
+        bgColor: "bg-[#AF2B24]",
+        textColor: "text-white",
       },
     ],
     description:
@@ -42,18 +42,18 @@ export const products: Product[] = [
     tags: [
       {
         label: "Seed",
-        bgColor: "bg-[#115526]/10",
-        textColor: "text-[#115526]",
+        bgColor: "bg-[#115526]",
+        textColor: "text-white",
       },
       {
         label: "Soil",
-        bgColor: "bg-[#115526]/10",
-        textColor: "text-[#115526]",
+        bgColor: "bg-[#115526]",
+        textColor: "text-white",
       },
       {
         label: "Foliar",
-        bgColor: "bg-[#115526]/10",
-        textColor: "text-[#115526]",
+        bgColor: "bg-[#115526]",
+        textColor: "text-white",
       },
     ],
     description:
@@ -67,8 +67,8 @@ export const products: Product[] = [
     tags: [
       {
         label: "Growth & Yield",
-        bgColor: "bg-[#B48E1C]/10",
-        textColor: "text-[#B48E1C]",
+        bgColor: "bg-[#B48E1C]",
+        textColor: "text-white",
       },
     ],
     description:
@@ -82,8 +82,8 @@ export const products: Product[] = [
     tags: [
       {
         label: "Pest Control",
-        bgColor: "bg-[#1F5571]/10",
-        textColor: "text-[#1F5571]",
+        bgColor: "bg-[#1F5571]",
+        textColor: "text-white",
       },
     ],
     description:

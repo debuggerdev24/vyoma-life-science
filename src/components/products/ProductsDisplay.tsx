@@ -9,6 +9,7 @@ const ProductsDisplay = () => {
       description="Our expanded portfolio of herbal formulations combines cutting-edge research with traditional botanical wisdom to deliver comprehensive plant protection and growth solutions."
       products={products}
       paddingClasses="pt-[310px] pb-[110px]"
+      variant="steps"
     />
   );
 };

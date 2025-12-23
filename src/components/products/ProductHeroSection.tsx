@@ -14,7 +14,7 @@ const ProductHeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen -top-24 left-14">
-        <div className="w-full max-w-[1512px] mx-auto px-6 md:px-24 py-20">
+        <div className="w-full max-w-[1512px] mx-auto px-6 md:px-12 lg:px-24 py-20">
           <div className="flex flex-col items-center max-w-[1096px] text-center">
             {/* Main Heading */}
             <h1 className="text-7xl leading-[80px] font-normal text-white mb-[10px] tracking-[-4px]">

@@ -1,8 +1,8 @@
 const ComparisonSection = () => {
   return (
-    <section className="bg-[#F6F7F1] py-28">
-      <div className="mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 max-w-[1512px] mx-auto px-6 md:px-24 relative">
+    <section className="bg-[#F6F7F1] py-14 lg:py-[110px]">
+      <div className="mx-auto relative">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 max-w-[1512px] mx-auto px-6 md:px-24 ">
           {/* Wheat Illustration */}
           <img
             className="absolute top-20 left-0 max-w-[450px]"
@@ -28,9 +28,9 @@ const ComparisonSection = () => {
             <h3 className="text-2xl font-medium text-[#0A0A0A] mb-[10px]">
               The Problem with Chemical Farming
             </h3>
-            <p className="text-sm font-normal text-[#0A0A0A]/60 mb-[30px]">
-              Chemicals in the field of farming are only for the management of
-              pests and diseases.
+            <p className="text-sm font-normal text-[#0A0A0A]/60 mb-[30px] leading-[150%]">
+              Comparing the risks of chemical farming with the advantages of
+              herbal solutions.
             </p>
 
             <div className="mt-[30px]">
@@ -87,9 +87,9 @@ const ComparisonSection = () => {
             <h3 className="text-2xl font-medium text-[#0A0A0A] mb-[10px]">
               The Power of Plant-Based Products
             </h3>
-            <p className="text-sm font-normal text-[#0A0A0A]/60 mb-[30px]">
-              Plant extracts have sustainable,safe, and biodegradable mode of
-              action, making them ideal for sustainable agriculture.
+            <p className="text-sm font-normal text-[#0A0A0A]/60 mb-[30px] leading-[150%]">
+              Plant-extract formulations offer safe and sustainable crop
+              protection without compromising yield or economics.
             </p>
 
             <div className="mt-[30px]">

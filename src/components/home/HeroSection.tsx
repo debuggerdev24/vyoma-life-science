@@ -14,10 +14,10 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center min-h-screen top-16">
-        <div className="w-full max-w-[1512px] mx-auto px-6 md:px-24 py-20">
+        <div className="w-full max-w-[1512px] mx-auto px-6 md:px-12 lg:px-24 py-20">
           <div className="max-w-[821px]">
             {/* Main Heading */}
-            <h1 className="text-7xl leading-[80px] font-normal text-white mb-6 tracking-[-4px]">
+            <h1 className="text-5xl lg:text-7xl lg:leading-[80px] font-normal text-white mb-6 lg:tracking-[-4px]">
               Herbal Crop Protection for
               <br />
               Sustainable Farming.
@@ -32,15 +32,15 @@ const HeroSection = () => {
           </div>
           <div className="w-full flex flex-wrap gap-4 justify-between">
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium rounded transition-colors">
+              <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
                 View Products
               </button>
-              <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium rounded transition-colors">
+              <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium transition-colors">
                 Talk to Our Expert
               </button>
             </div>
 
-            <div className="flex gap-2 items-center text-white text-xl font-normal">
+            <div className="flex gap-2 items-end text-white text-xl font-normal">
               <img src="/mouse.png" alt="explore more" className="w-6 h-6" />
               <span>Explore More</span>
             </div>

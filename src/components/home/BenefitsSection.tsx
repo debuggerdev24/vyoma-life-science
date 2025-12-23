@@ -1,4 +1,5 @@
-import ImageContentSection from "../common/ImageContentSection";
+
+import ImageStepsSection from "../common/ImageStepsSection";
 
 const BenefitsSection = () => {
   const contentItems = [
@@ -37,7 +38,7 @@ const BenefitsSection = () => {
   ];
 
   return (
-    <ImageContentSection
+    <ImageStepsSection
       sectionLabel="Who We Support"
       title="Who Benefits From Our Solutions"
       image="/farmer2.png"

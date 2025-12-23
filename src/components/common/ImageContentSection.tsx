@@ -1,11 +1,11 @@
-interface ContentItem {
+export interface ContentItem {
   icon: string | React.ReactNode; // Can be image path or SVG element
   title: string;
   description: string | string[]; // Can be single paragraph or list items
   iconBgColor?: string;
 }
 
-interface ImageContentSectionProps {
+export interface ImageContentSectionProps {
   sectionLabel: string;
   title: string;
   subtitle?: string;

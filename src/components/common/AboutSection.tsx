@@ -14,15 +14,15 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   showButton = true,
 }) => {
   return (
-    <section className="bg-white py-[110px]">
+    <section className="bg-white py-14 lg:py-[110px]">
       <div className="max-w-[1512px] mx-auto px-6 md:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Column */}
           <div>
-            <p className="text-sm font-semibold text-[#0A0A0AB2] uppercase tracking-wide mb-4">
+            <p className="text-sm font-semibold text-[#0A0A0AB2] leading-[140%]">
               {tag}
             </p>
-            <h2 className="text-4xl md:text-5xl font-medium text-[#0A0A0A] ">
+            <h2 className="text-4xl md:text-[56px] lg:leading-[65px] lg:tracking-[-4%] font-medium text-[#0A0A0A] ">
               {title}
             </h2>
           </div>

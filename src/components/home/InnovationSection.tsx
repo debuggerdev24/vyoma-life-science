@@ -43,7 +43,7 @@ const InnovationSection = () => {
         contentItems={contentItems}
         imagePosition="left"
         bgColor=""
-        containerClasses="max-w-[1512px] mx-auto px-6 lg:px-24 py-[110px] gap-[50px]"
+        containerClasses="max-w-[1512px] mx-auto px-6 lg:px-24 py-14 lg:py-[110px] gap-[50px]"
         imageClasses="h-full max-h-[922px] w-full max-w-[621px] object-cover"
       />
 

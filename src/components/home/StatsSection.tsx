@@ -1,6 +1,6 @@
 const StatsSection = () => {
   return (
-    <section className="bg-white py-28 max-w-[1512px] mx-auto">
+    <section className="bg-white pb-14 lg:pb-[110px] max-w-[1512px] mx-auto">
       <div className="px-6 md:px-24 ">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {/* Stat 1 */}
@@ -8,7 +8,7 @@ const StatsSection = () => {
             <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
               Cost Reduction
             </p>
-            <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
+            <p className="text-5xl lg:text-[70px] font-medium text-[#0A0A0A] mb-[2px] leading-10 lg:leading-[80px] tracking-[-2px]">
               25-30%
             </p>
             <p className="text-base font-normal text-[#0A0A0A]/60">
@@ -21,7 +21,7 @@ const StatsSection = () => {
             <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
               Yield Improvement
             </p>
-            <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
+            <p className="text-5xl lg:text-[70px] font-medium text-[#0A0A0A] mb-[2px] leading-10 lg:leading-[80px] tracking-[-2px]">
               10-15%
             </p>
             <p className="text-base font-normal text-[#0A0A0A]/60">
@@ -34,7 +34,7 @@ const StatsSection = () => {
             <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
               Product Range
             </p>
-            <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
+            <p className="text-5xl lg:text-[70px] font-medium text-[#0A0A0A] mb-[2px] leading-10 lg:leading-[80px] tracking-[-2px]">
               04
             </p>
             <p className="text-base font-normal text-[#0A0A0A]/60">
@@ -47,7 +47,7 @@ const StatsSection = () => {
             <p className="text-base font-normal text-[#0A0A0A] mb-[15px]">
               Crop Coverage
             </p>
-            <p className="text-[70px] font-medium text-[##0A0A0A] mb-[2px] leading-[80px] tracking-[-2px]">
+            <p className="text-5xl lg:text-[70px] font-medium text-[#0A0A0A] mb-[2px] leading-10 lg:leading-[80px] tracking-[-2px]">
               All Crops
             </p>
             <p className="text-base font-normal text-[#0A0A0A]/60">

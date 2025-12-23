@@ -1,10 +1,148 @@
+"use client";
+import { useState } from "react";
+
 const ContactSection = () => {
+  // Form state
+  const [name, setName] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [state, setState] = useState("");
+  const [crop, setCrop] = useState("");
+  const [message, setMessage] = useState("");
+
+  // Error state
+  const [errors, setErrors] = useState({
+    name: "",
+    mobile: "",
+    state: "",
+    crop: "",
+    message: "",
+  });
+
+  // Validation functions
+  const validateName = (value: string) => {
+    if (!value.trim()) {
+      return "Name is required";
+    }
+    if (value.trim().length < 2) {
+      return "Name must be at least 2 characters";
+    }
+    return "";
+  };
+
+  const validateMobile = (value: string) => {
+    if (!value.trim()) {
+      return "Mobile number is required";
+    }
+    const phoneRegex = /^[6-9]\d{9}$/;
+    if (!phoneRegex.test(value.trim())) {
+      return "Please enter a valid 10-digit mobile number";
+    }
+    return "";
+  };
+
+  const validateState = (value: string) => {
+    if (!value) {
+      return "Please select a state";
+    }
+    return "";
+  };
+
+  const validateCrop = (value: string) => {
+    if (!value) {
+      return "Please select a crop";
+    }
+    return "";
+  };
+
+  const validateMessage = (value: string) => {
+    if (!value.trim()) {
+      return "Message is required";
+    }
+    if (value.trim().length < 10) {
+      return "Message must be at least 10 characters";
+    }
+    return "";
+  };
+
+  // Handle form submission
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Validate all fields
+    const nameError = validateName(name);
+    const mobileError = validateMobile(mobile);
+    const stateError = validateState(state);
+    const cropError = validateCrop(crop);
+    const messageError = validateMessage(message);
+
+    // Update errors
+    setErrors({
+      name: nameError,
+      mobile: mobileError,
+      state: stateError,
+      crop: cropError,
+      message: messageError,
+    });
+
+    // If no errors, submit the form
+    if (!nameError && !mobileError && !stateError && !cropError && !messageError) {
+      // TODO: Add your form submission logic here
+      console.log("Form submitted successfully:", {
+        name,
+        mobile,
+        state,
+        crop,
+        message,
+      });
+      
+      // Reset form
+      setName("");
+      setMobile("");
+      setState("");
+      setCrop("");
+      setMessage("");
+      setErrors({
+        name: "",
+        mobile: "",
+        state: "",
+        crop: "",
+        message: "",
+      });
+      
+      alert("Thank you! Our team will contact you soon.");
+    }
+  };
+
+  // Handle field blur for real-time validation
+  const handleBlur = (field: string, value: string) => {
+    let error = "";
+    switch (field) {
+      case "name":
+        error = validateName(value);
+        break;
+      case "mobile":
+        error = validateMobile(value);
+        break;
+      case "state":
+        error = validateState(value);
+        break;
+      case "crop":
+        error = validateCrop(value);
+        break;
+      case "message":
+        error = validateMessage(value);
+        break;
+    }
+    setErrors((prev) => ({ ...prev, [field]: error }));
+  };
+
+
   return (
     <section className="bg-white">
-      <div className="mx-auto">
+      <div className=" mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* Left Column - Dark Green Background */}
-          <div className="bg-[#1F4E3D] p-16 relative overflow-hidden">
+          <div className="bg-[#1F4E3D] p-8 lg:p-16 relative overflow-hidden">
             {/* Decorative plant illustration */}
             <div className="absolute bottom-0 left-0 opacity-10">
               <img
@@ -50,7 +188,7 @@ const ContactSection = () => {
                     <p className="text-white/60 text-base font-normal mb-1">
                       Call Us / WhatsApp
                     </p>
-                    <p className="text-white text-[23px] leading-7 font-medium">
+                    <p className="text-white text-lg leading-7 font-medium">
                       +91 25897 25687
                     </p>
                   </div>
@@ -75,9 +213,9 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-white/60 text-base font-normal mb-1">
-                      EMAIL US
+                      Email us
                     </p>
-                    <p className="text-white text-[23px] leading-7 font-medium">
+                    <p className="text-white text-lg leading-7 font-medium">
                       info@vyomalifesciences.com
                     </p>
                   </div>
@@ -108,9 +246,9 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="text-white/60 text-base font-normal mb-1">
-                      VISIT US
+                      Visit Us
                     </p>
-                    <p className="text-white text-[23px] leading-7 font-medium">
+                    <p className="text-white text-lg leading-7 font-medium">
                       Vyoma Life Sciences - Agricultural Innovation Center,
                       India
                     </p>
@@ -121,7 +259,7 @@ const ContactSection = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="py-[110px] px-[70px]">
+          <div className="py-14 lg:py-[110px] px-10 lg:px-[70px]">
             <h2 className="text-[#0A0A0A] text-[56px] font-normal leading-[65px] mb-[10px]">
               Send an Enquiry
             </h2>
@@ -129,7 +267,7 @@ const ContactSection = () => {
               Quick response from our technical support team.
             </p>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               {/* Name Field */}
               <div>
                 <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
@@ -138,8 +276,18 @@ const ContactSection = () => {
                 <input
                   type="text"
                   placeholder="Enter your full name"
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm focus:outline-none focus:border-[#1F4E3D] transition-colors"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  onBlur={(e) => handleBlur("name", e.target.value)}
+                  className={`w-full px-4 py-3 bg-white border rounded text-sm focus:outline-none transition-colors ${
+                    errors.name
+                      ? "border-red-500 focus:border-red-500"
+                      : "border-gray-300 focus:border-[#1F4E3D]"
+                  }`}
                 />
+                {errors.name && (
+                  <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+                )}
               </div>
 
               {/* Mobile Number Field */}
@@ -149,9 +297,19 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="tel"
-                  placeholder="+91 00000 00000"
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm focus:outline-none focus:border-[#1F4E3D] transition-colors"
+                  placeholder="Enter your phone number"
+                  value={mobile}
+                  onChange={(e) => setMobile(e.target.value)}
+                  onBlur={(e) => handleBlur("mobile", e.target.value)}
+                  className={`w-full px-4 py-3 bg-white border rounded text-sm focus:outline-none transition-colors ${
+                    errors.mobile
+                      ? "border-red-500 focus:border-red-500"
+                      : "border-gray-300 focus:border-[#1F4E3D]"
+                  }`}
                 />
+                {errors.mobile && (
+                  <p className="text-red-500 text-xs mt-1">{errors.mobile}</p>
+                )}
               </div>
 
               {/* State and Crop Row */}
@@ -160,25 +318,61 @@ const ContactSection = () => {
                   <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
                     State
                   </label>
-                  <select className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm text-[#0A0A0A] focus:outline-none focus:border-[#1F4E3D] transition-colors">
-                    <option>Select state</option>
-                    <option>Maharashtra</option>
-                    <option>Karnataka</option>
-                    <option>Gujarat</option>
-                    <option>Punjab</option>
+                  <select
+                    value={state}
+                    onChange={(e) => setState(e.target.value)}
+                    onBlur={(e) => handleBlur("state", e.target.value)}
+                    className={`w-full px-4 py-3 bg-white border rounded text-sm
+                      focus:outline-none transition-colors
+                      ${state === "" ? "text-gray-500" : "text-black"}
+                      ${
+                        errors.state
+                          ? "border-red-500 focus:border-red-500"
+                          : "border-gray-300 focus:border-[#1F4E3D]"
+                      }
+                    `}
+                  >
+                    <option value="" disabled>
+                      Select your state
+                    </option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Punjab">Punjab</option>
                   </select>
+                  {errors.state && (
+                    <p className="text-red-500 text-xs mt-1">{errors.state}</p>
+                  )}
                 </div>
                 <div>
                   <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
                     Crop
                   </label>
-                  <select className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm text-[#0A0A0A] focus:outline-none focus:border-[#1F4E3D] transition-colors">
-                    <option>What crop you growing?</option>
-                    <option>Tomato</option>
-                    <option>Rice</option>
-                    <option>Wheat</option>
-                    <option>Cotton</option>
+                  <select
+                    value={crop}
+                    onChange={(e) => setCrop(e.target.value)}
+                    onBlur={(e) => handleBlur("crop", e.target.value)}
+                    className={`w-full px-4 py-3 bg-white border rounded text-sm
+                      focus:outline-none transition-colors
+                      ${crop === "" ? "text-gray-500" : "text-black"}
+                      ${
+                        errors.crop
+                          ? "border-red-500 focus:border-red-500"
+                          : "border-gray-300 focus:border-[#1F4E3D]"
+                      }
+                    `}
+                  >
+                    <option value="" disabled>
+                      What crop are you growing?
+                    </option>
+                    <option value="Tommato">Tommato</option>
+                    <option value="Rice">Rice</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="Cotton">Cotton</option>
                   </select>
+                  {errors.crop && (
+                    <p className="text-red-500 text-xs mt-1">{errors.crop}</p>
+                  )}
                 </div>
               </div>
 
@@ -190,14 +384,24 @@ const ContactSection = () => {
                 <textarea
                   rows={4}
                   placeholder="Describe your farming challenge or requirement"
-                  className="w-full px-4 py-3 bg-white border border-gray-300 rounded text-sm resize-none focus:outline-none focus:border-[#1F4E3D] transition-colors"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  onBlur={(e) => handleBlur("message", e.target.value)}
+                  className={`w-full px-4 py-3 bg-white border rounded text-sm resize-none focus:outline-none transition-colors ${
+                    errors.message
+                      ? "border-red-500 focus:border-red-500"
+                      : "border-gray-300 focus:border-[#1F4E3D]"
+                  }`}
                 ></textarea>
+                {errors.message && (
+                  <p className="text-red-500 text-xs mt-1">{errors.message}</p>
+                )}
               </div>
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-[#FDB714] hover:bg-[#e5a612] text-white font-semibold py-4 rounded transition-colors"
+                className="w-full bg-[#FDB714] hover:bg-[#e5a612] text-white font-semibold py-4 transition-colors"
               >
                 Get Expert Guidance
               </button>
