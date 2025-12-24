@@ -156,7 +156,7 @@ const ContactSection = () => {
               <p className="text-white/70 font-semibold text-sm">
                 Let's Grow Better
               </p>
-              <h2 className="text-white text-[56px] font-normal leading-[65px] mb-[10px]">
+              <h2 className="text-white text-3xl md:text-[56px] font-normal md:leading-[65px] mb-[10px]">
                 Grow Better, Naturally
               </h2>
               <p className="text-white/60 text-base leading-relaxed mb-[30px] max-w-[590px]">
@@ -168,8 +168,8 @@ const ContactSection = () => {
               {/* Contact Information */}
               <div className="flex flex-col gap-[30px]">
                 {/* Phone */}
-                <div className="flex items-start gap-4">
-                  <div className="w-[61px] h-[61px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="flex items-center md:gap-4 gap-2">
+                  <div className="md:w-[61px] md:h-[61px] h-[45px] w-[45px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-[30px] h-[30px] text-white"
                       fill="none"
@@ -195,8 +195,8 @@ const ContactSection = () => {
                 </div>
 
                 {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="w-[61px] h-[61px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="flex items-center md:gap-4 gap-2">
+                  <div className="md:w-[61px] md:h-[61px] h-[45px] w-[45px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-[30px] h-[30px] text-white"
                       fill="none"
@@ -222,8 +222,8 @@ const ContactSection = () => {
                 </div>
 
                 {/* Address */}
-                <div className="flex items-start gap-4">
-                  <div className="w-[61px] h-[61px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="flex items-center md:gap-4 gap-2">
+                  <div className="md:w-[61px] md:h-[61px] h-[45px] w-[45px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-[30px] h-[30px] text-white"
                       fill="none"
@@ -260,7 +260,7 @@ const ContactSection = () => {
 
           {/* Right Column - Contact Form */}
           <div className="py-14 lg:py-[110px] px-10 lg:px-[70px]">
-            <h2 className="text-[#0A0A0A] text-[56px] font-normal leading-[65px] mb-[10px]">
+            <h2 className="text-[#0A0A0A] md:text-[56px] text-3xl font-normal md:leading-[65px] mb-[10px]">
               Send an Enquiry
             </h2>
             <p className="text-[#0A0A0A] text-sm font-normal opacity-60 mb-10">
@@ -313,7 +313,7 @@ const ContactSection = () => {
               </div>
 
               {/* State and Crop Row */}
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
                     State

@@ -24,7 +24,7 @@ const ComparisonSection = () => {
           </div>
 
           {/* Middle Column - The Problem with Chemical Farming */}
-          <div className="bg-white p-[30px] rounded-lg max-w-[419px]">
+          <div className="bg-white p-[30px] rounded-lg lg:max-w-[419px]">
             <h3 className="text-2xl font-medium text-[#0A0A0A] mb-[10px]">
               The Problem with Chemical Farming
             </h3>
@@ -83,7 +83,7 @@ const ComparisonSection = () => {
           </div>
 
           {/* Right Column - The Power of Plant-Based Products */}
-          <div className="bg-white p-[30px] rounded-lg max-w-[419px] mt-[80px]">
+          <div className="bg-white p-[30px] rounded-lg lg:max-w-[419px] mt-[80px]">
             <h3 className="text-2xl font-medium text-[#0A0A0A] mb-[10px]">
               The Power of Plant-Based Products
             </h3>

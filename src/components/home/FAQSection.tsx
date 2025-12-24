@@ -55,11 +55,11 @@ const FAQSection = () => {
           {faqs.map((faq) => (
             <details key={faq.id} className="group border-b border-gray-300">
               <summary className="flex justify-between items-center pt-10 pb-[10px] cursor-pointer list-none">
-                <div className="flex gap-[75px] items-center">
+                <div className="flex gap-5 lg:gap-[75px] items-center">
                   <span className="text-[#0A0A0A] font-medium opacity-[64%] text-[25px] leading-10">
                     {faq.id}
                   </span>
-                  <span className="text-[#0A0A0A] font-normal text-3xl leading-[40px] max-w-[800px]">
+                  <span className="text-[#0A0A0A] font-normal text-xl lg:text- lg:leading-[40px] max-w-[800px]">
                     {faq.question}
                   </span>
                 </div>
@@ -72,7 +72,7 @@ const FAQSection = () => {
                   </span>
                 </div>
               </summary>
-              <div className="pb-6 pl-[105px] pr-10 max-w-[800px]">
+              <div className="pb-6 pl-10 lg:pl-[105px] pr-10 max-w-[800px]">
                 <p className="text-[#0A0A0A] text-sm leading-relaxed opacity-70">
                   {faq.answer}
                 </p>

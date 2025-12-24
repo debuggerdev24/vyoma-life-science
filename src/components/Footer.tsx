@@ -18,8 +18,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
-              High-performance products developed for safe, sustainable, and
-              residue-free farming.
+             Herbal crop protection solutions for safer, sustainable, and residue-free farming.
             </p>
 
             {/* Social Icons */}

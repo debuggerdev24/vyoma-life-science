@@ -44,7 +44,7 @@ const InnovationSection = () => {
         imagePosition="left"
         bgColor=""
         containerClasses="max-w-[1512px] mx-auto px-6 lg:px-24 py-14 lg:py-[110px] gap-[50px]"
-        imageClasses="h-full max-h-[922px] w-full max-w-[621px] object-cover"
+        imageClasses="h-full lg:max-h-[922px] w-full lg:max-w-[621px] object-cover"
       />
 
       <div className="flex flex-col justify-center items-center max-w-[850px] px-2 mx-auto">

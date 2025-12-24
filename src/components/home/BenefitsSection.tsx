@@ -45,7 +45,7 @@ const BenefitsSection = () => {
       imageAlt="farmer"
       contentItems={contentItems}
       imagePosition="right"
-      imageClasses="h-full min-h-[922px] w-full max-w-[621px] object-cover"
+      imageClasses="h-full min-h-[922px] w-full lg:max-w-[621px] object-cover"
     />
   );
 };

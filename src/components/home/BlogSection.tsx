@@ -25,7 +25,7 @@ const BlogSection = () => {
               <img
                 src="/farming1.png"
                 alt="Reduce Chemical Dependency"
-                className="w-[416px] h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
+                className="lg:w-[416px] w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
             <div className="text-[#0A0A0A]/60 font-medium text-sm mb-[5px]">
@@ -45,7 +45,7 @@ const BlogSection = () => {
               <img
                 src="/farming2.png"
                 alt="Viral Diseases in Crops"
-                className="w-[416px] h-[390px] object-cover transition-transform duration-300 group-hover:scale-105"
+                className="lg:w-[416px] w-full h-[390px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
             <div className="text-[#0A0A0A]/60 font-medium text-sm mb-[5px]">
@@ -65,7 +65,7 @@ const BlogSection = () => {
               <img
                 src="/farming3.png"
                 alt="Increase Yield Naturally"
-                className="w-[416px] h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
+                className="lg:w-[416px] w-full h-[300px] object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
             <div className="text-[#0A0A0A]/60 font-medium text-sm mb-[5px]">
