@@ -17,3 +17,19 @@
     @apply max-w-7xl;
   }
 }
+
+/* ===== Breathe Slow Animation ===== */
+@keyframes breathe-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.6;
+  }
+}
+
+.animate-breathe-slow {
+  animation: breathe-slow 2s ease-in-out infinite;
+}

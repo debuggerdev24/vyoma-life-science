@@ -1,6 +1,6 @@
 import React from "react";
 
-interface Benefit {
+export interface Benefit {
   icon: string;
   title: string;
   description: string;

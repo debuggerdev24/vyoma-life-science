@@ -66,7 +66,7 @@ const ProductsSection = () => {
       name: "RUDRA",
       slug: "rudra",
       subtitle: "Plant Protector Against Pests",
-      image: "/arka.png",
+      image: "/rudra.png",
       tags: [
         {
           label: "Pest Control",
@@ -86,6 +86,7 @@ const ProductsSection = () => {
       description="A curated range of four scientifically developed herbal formulations designed to boost plant immunity, support growth, and protect crops from diseases and pests safely and sustainably."
       products={products}
       variant="default"
+      isbgImageVisible={true}
     />
   );
 };

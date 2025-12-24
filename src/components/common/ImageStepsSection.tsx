@@ -57,7 +57,7 @@ const ImageStepsSection = ({
             className="h-[30px] w-[30px]"
           />
         ) : (
-          <span className="text-white font-semibold">{item.icon}</span>
+          <span className="text-[#000000] font-semibold">{item.icon}</span>
         )
       ) : (
         item.icon

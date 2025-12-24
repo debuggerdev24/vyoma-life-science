@@ -10,6 +10,8 @@ const ProductsDisplay = () => {
       products={products}
       paddingClasses="pt-[310px] pb-[110px]"
       variant="steps"
+      isbgImageVisible={true}
+      ctaButtonLabel="View Product"
     />
   );
 };

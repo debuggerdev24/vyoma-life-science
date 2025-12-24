@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 interface Tag {
   label: string;
@@ -24,6 +25,8 @@ interface ProductsGridProps {
   products: Product[];
   paddingClasses?: string;
   variant?: "default" | "steps";
+  isbgImageVisible?: boolean;
+  ctaButtonLabel?: string;
 }
 
 const ProductsGrid = ({
@@ -33,6 +36,8 @@ const ProductsGrid = ({
   products,
   paddingClasses = "py-14 lg:py-[110px]",
   variant = "default",
+  isbgImageVisible = false,
+  ctaButtonLabel = ""
 }: ProductsGridProps) => {
   const router = useRouter();
 
@@ -46,16 +51,18 @@ const ProductsGrid = ({
         className={`flex max-w-[1512px] mx-auto px-6 md:px-24 ${paddingClasses} gap-[65px]`}
       >
         {/* Wheat images - hidden on mobile */}
+        {isbgImageVisible && (
         <img
           className="hidden lg:block absolute bottom-1/3 left-0 max-w-[450px]"
           src="/wheat.png"
           alt=""
-        />
+        />)}
+        {isbgImageVisible && (
         <img
           className="hidden lg:block absolute bottom-1/3 right-0 max-w-[450px]"
           src="/wheat-flip.png"
           alt=""
-        />
+        />)}
         
         <div className="flex flex-col justify-center items-center w-full">
           <div className="font-semibold text-sm text-[#0A0A0AB2]">
@@ -144,7 +151,7 @@ const ProductsGrid = ({
                     </div>
                   ) : (
                     <div className="flex w-full text-[#0A0A0A] text-base font-semibold items-center gap-2 mt-4 lg:mt-5">
-                      View product
+                      {ctaButtonLabel}
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lg:w-6 lg:h-6">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M5 12l14 0" />

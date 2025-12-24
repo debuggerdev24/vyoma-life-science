@@ -46,7 +46,7 @@ const VisionSection = () => {
     <ImageContentSection
       sectionLabel="Our Vision"
       title="What We Stand For"
-      subtitle="Vyoma Life Sciences is committed to developing solutions designed with herbal crop protection that supports farmers, soil health, consumers, and the environment."
+      subtitle="Vyoma Life Sciences is committed to transforming agriculture through safe, herbal crop protection that supports farmers, soil health, consumers, and the environment."
       image="/farmer.png"
       imageAlt="Farmer in field"
       contentItems={contentItems}
