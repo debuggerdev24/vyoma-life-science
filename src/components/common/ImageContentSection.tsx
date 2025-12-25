@@ -41,7 +41,7 @@ const ImageContentSection = ({
       <p className="text-sm font-semibold text-[#0A0A0AB2] md:text-base">
         {sectionLabel}
       </p>
-      <h2 className="text-4xl md:text-5xl md:text-[56px] tracking-[-4px] md:leading-[65px] font-light md:font-normal text-gray-900 leading-tight mb-[5px]">
+      <h2 className="text-4xl md:text-5xl md:text-[56px] md:tracking-[-4px] md:leading-[65px] font-light md:font-normal text-gray-900 leading-tight mb-[5px]">
         {title}
       </h2>
       {subtitle && (

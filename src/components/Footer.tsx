@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-10 sm:gap-12 lg:gap-[160px]">
+          <div className="w-full flex flex-col sm:flex-row gap-10 justify-between">
             {/* Quick Links */}
             <div>
               <h3 className="font-semibold mb-5">QUICK LINKS</h3>

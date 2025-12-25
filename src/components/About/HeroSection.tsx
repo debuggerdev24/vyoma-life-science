@@ -17,7 +17,7 @@ const HeroSection = () => {
         <div className="w-full max-w-[1512px] mx-auto px-6 md:px-12 lg:px-24 py-20">
           <div className="max-w-[1024px]">
             {/* Main Heading */}
-            <h1 className="text-7xl leading-[80px] font-normal text-white mb-5 tracking-[-4px]">
+            <h1 className="lg:text-7xl text-5xl  lg:leading-[80px]  font-normal text-white mb-5 lg:tracking-[-4px] ">
               Sustainable Crop Protection
               <br />
               Powered by Nature and Science

@@ -25,7 +25,7 @@ const QuoteSection = () => {
             </p>
 
             {/* Main Heading */}
-            <h1 className="text-[54px] leading-[70px] font-normal text-white mb-5 tracking-[-4px]">
+            <h1 className="lg:text-[54px] text-3xl lg:leading-[70px]  font-normal text-white mb-5 lg:tracking-[-4px] ">
               Uniting Farmers, Dealers and Institutions to Build a Safe and
               Sustainable Future for Agriculture
             </h1>

@@ -94,13 +94,13 @@ const ResearchEvolution = () => {
 
   return (
     <div className="w-full bg-[#F6F7F1]">
-      <div className="flex flex-col mx-auto px-24 py-[110px] gap-[70px]">
+      <div className="flex flex-col mx-auto lg:pl-24 pl-8 py-[110px] gap-[70px]">
         {/* Dynamic Header Section */}
         <div className="flex flex-col items-center text-center justify-center">
           <p className="text-[#0A0A0AB2] text-sm font-semibold">
             {headerData.subtitle}
           </p>
-          <div className="text-[#0A0A0A] text-[56px] font-normal tracking-[-4px] leading-[65px]">
+          <div className="text-[#0A0A0A] lg:text-[56px] text-3xl font-normal lg:tracking-[-4px] lg:leading-[65px]">
             {headerData.title}
           </div>
           <div className="text-[#0A0A0A]/60 text-sm font-normal mt-[10px]">

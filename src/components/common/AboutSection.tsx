@@ -30,7 +30,14 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           {/* Right Column */}
           <div className="space-y-6">
             {paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-[#0A0A0A] text-xl font-normal">
+              <p 
+                key={index} 
+                className={
+                  index === 1 
+                    ? "text-[#0A0A0A]/60 text-xl font-normal leading-[150%]" 
+                    : "text-[#0A0A0A] text-xl font-normal leading-[150%]"
+                }
+              >
                 {paragraph}
               </p>
             ))}
