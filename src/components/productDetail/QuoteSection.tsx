@@ -24,7 +24,7 @@ const QuoteSection = () => {
             </p>
 
             {/* Main Heading */}
-            <h1 className="text-[54px] leading-[70px] font-normal text-white mb-5 tracking-[-4px]">
+            <h1 className="text-3xl lg:text-[54px] lg:leading-[70px] font-normal text-white mb-5 lg:tracking-[-4px]">
               Get dosage guidance or consultation based on your crop and region.
             </h1>
 

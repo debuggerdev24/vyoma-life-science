@@ -60,7 +60,7 @@ const RealResult = () => {
   return (
     <div className="flex flex-col max-w-[1140px] mx-auto items-center py-12 md:py-16 lg:py-[110px] px-6 md:px-12">
       <p className="text-[#0A0A0AB2] font-semibold text-sm">Real Results</p>
-      <div className="text-[#0A0A0A] text-3xl md:text-4xl lg:text-[56px] font-normal text-center mb-8 md:mb-10 lg:mb-12">
+      <div className="text-[#0A0A0A] text-3xl md:text-4xl lg:text-[56px] font-normal lg:leading-[65px] text-center mb-8 md:mb-10 lg:mb-12">
         Real Results You Can See
       </div>
 
@@ -90,19 +90,35 @@ const RealResult = () => {
         {/* Main Content */}
         <div className="flex flex-col w-full">
           <div className="grid grid-cols-2 w-full max-w-[900px] mx-auto h-[250px] sm:h-[300px] md:h-[350px] lg:h-[450px] gap-2 md:gap-0">
-            <div className="overflow-hidden">
+            <div className="overflow-hidden relative border border-[#EABE0D] border-2">
+              <div className="bg-gradient-to-b from-transparent to-black from-50% to-100% absolute inset-0"></div>
               <img
                 src={currentResult.beforeImage}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover "
                 alt="before"
               />
+              <div className="absolute bg-[#AF2B24] top-5 left-5 w-[68px] px-[10px] py-[9px] text-white text-center text-[12px] leading-3">
+                BEFORE
+              </div>
+              <div className="absolute bottom-5 left-5 right-8 text-base leading-[150%] text-white">
+                Virus-infected leaves with curling, yellowing, and mosaic
+                patterns.
+              </div>
             </div>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden relative border border-[#EABE0D] border-2">
+              <div className="bg-gradient-to-b from-transparent to-black from-50% to-100% absolute inset-0"></div>
               <img
                 src={currentResult.afterImage}
                 className="h-full w-full object-cover"
                 alt="after"
               />
+              <div className="absolute bg-[#115526] top-5 left-5 w-[68px] px-[10px] py-[9px] text-white text-center text-[12px] leading-3">
+                AFTER
+              </div>
+              <div className="absolute bottom-5 left-5 right-8 text-base leading-[150%] text-white">
+                New leaves emerged green and healthy within 10–15 days after
+                MITRA application.
+              </div>
             </div>
           </div>
 
@@ -113,22 +129,6 @@ const RealResult = () => {
             <div className="text-[#0A0A0A]/60 text-xs font-normal leading-[150%]">
               {currentResult.description}
             </div>
-          </div>
-
-          {/* Progress Indicators */}
-          <div className="flex justify-center gap-2 mt-4">
-            {resultsData.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentIndex(index)}
-                className={`h-2 rounded-full transition-all ${
-                  index === currentIndex
-                    ? "w-8 bg-[#EABE0D]"
-                    : "w-2 bg-[#0A0A0A]/20 hover:bg-[#0A0A0A]/40"
-                }`}
-                aria-label={`Go to result ${index + 1}`}
-              />
-            ))}
           </div>
 
           {/* Mobile Navigation Buttons */}

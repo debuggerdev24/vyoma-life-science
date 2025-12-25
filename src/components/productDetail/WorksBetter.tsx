@@ -64,11 +64,11 @@ const WorksBetter = () => {
         <p className="text-[#0A0A0AB2] text-sm font-semibold leading-[150%]">
           Key Benefits
         </p>
-        <div className="text-[#0A0A0A] font-normal text-3xl md:text-4xl lg:text-[56px] leading-tight md:leading-snug lg:leading-[65px] mb-[10px]">
+        <div className="text-[#0A0A0A] font-normal text-3xl md:text-4xl lg:text-[56px] md:leading-snug lg:leading-[65px] mb-[10px]">
           Why MITRA Works Better
         </div>
 
-        <p className="text-[#0A0A0A]/60 text-sm md:text-base font-normal leading-[150%] max-w-2xl mx-auto">
+        <p className="text-[#0A0A0A]/60 text-sm font-normal leading-[150%] max-w-2xl mx-auto">
           Stronger immunity, faster recovery, healthier growth — all without
           chemical residue or risk to farmers.
         </p>
