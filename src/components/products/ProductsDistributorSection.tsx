@@ -2,17 +2,17 @@ export default function ProductsDistributorSection() {
   return (
     <section className="max-w-[1320px] mx-auto grid md:grid-cols-2">
       {/* Left Section - Yellow */}
-      <div className="bg-[#E8C132] px-[50px] py-[50px] flex flex-col items-center justify-center">
-        <div className="max-w-[560px] text-center">
-          <h2 className="text-[40px] leading-[50px] font-normal text-[#0A0A0A] mb-5">
+      <div className="bg-[#E8C132] lg:p-[50px] p-8 flex flex-col items-center justify-center">
+        <div className="max-w-[560px] text-center flex flex-col h-full">
+          <h2 className="lg:text-[40px] lg:leading-[50px] text-3xl font-normal text-[#0A0A0A] mb-5">
             Find products available in your country/area
           </h2>
-          <p className="text-xl leading-[150%] text-[#0A0A0ACC] mb-10 ">
+          <p className="lg:text-xl text-lg leading-[150%] text-[#0A0A0ACC] mb-10 ">
             Select your country or area to explore our products available in
             your region. Discover tailored solutions designed to meet your needs
             and drive success.
           </p>
-          <div className="relative w-full max-w-xs mx-auto">
+          <div className="relative w-full max-w-xs mx-auto mt-auto">
             <select className="w-full bg-white text-gray-500 px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-black">
               <option>Select your state</option>
               <option>Maharashtra</option>
@@ -34,12 +34,12 @@ export default function ProductsDistributorSection() {
       </div>
 
       {/* Right Section - Green */}
-      <div className="bg-[#2C5F4F] px-[50px] py-[50px] flex flex-col items-center justify-center">
-        <div className="max-w-[560px] text-center">
-          <h2 className="text-[40px] leading-tight font-normal text-white mb-6">
+      <div className="bg-[#2C5F4F] lg:p-[50px] p-8 flex flex-col items-center justify-center">
+        <div className="max-w-[560px] text-center flex flex-col">
+          <h2 className="lg:text-[40px] lg:leading-[50px] text-3xl font-normal text-white mb-6">
             Are you a distributor or represent a company?
           </h2>
-          <p className="text-xl text-white mb-10">
+          <p className="lg:text-xl text-lg text-white mb-10">
             View our complete product portfolio and connect with us to explore
             opportunities for growth and partnership. Let's grow together!
           </p>

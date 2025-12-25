@@ -68,10 +68,10 @@ const ProductsGrid = ({
           <div className="font-semibold text-sm text-[#0A0A0AB2]">
             {sectionLabel}
           </div>
-          <div className="text-3xl lg:text-[56px] lg:leading-[65px] lg:tracking-[-4px] text-center">
+          <div className="text-3xl lg:text-[56px] lg:leading-[65px] lg:tracking-[-4px] tracking-[-2px] text-center">
             {title}
           </div>
-          <div className="flex text-center text-[#0A0A0A]/60 text-sm font-normal max-w-[650px] mt-[10px]">
+          <div className="flex text-center text-[#0A0A0A]/60 text-sm leading-[150%] font-normal max-w-[650px] mt-[10px]">
             {description}
           </div>
           

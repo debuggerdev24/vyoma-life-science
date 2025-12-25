@@ -4,11 +4,11 @@ import { products } from "@/lib/productData";
 const ProductsDisplay = () => {
   return (
     <ProductsGrid
-      sectionLabel="Complete Product Line"
-      title="Your one complete solutions"
-      description="Our expanded portfolio of herbal formulations combines cutting-edge research with traditional botanical wisdom to deliver comprehensive plant protection and growth solutions."
+      sectionLabel="Our Solutions"
+      title="Your one complete solutions"
+      description="We offer solutions to protect crops from all types of weeds, pests, and diseases at every stage of growth."
       products={products}
-      paddingClasses="pt-[310px] pb-[110px]"
+      paddingClasses="md:pt-[310px] pb-[110px]"
       variant="steps"
       isbgImageVisible={true}
       ctaButtonLabel="View Product"
