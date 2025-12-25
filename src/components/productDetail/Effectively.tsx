@@ -73,7 +73,7 @@ const Effectively = () => {
 
   return (
     <div className="w-full bg-[#F6F7F1] max-w-[1512px] mx-auto">
-      <div className="flex flex-col mx-auto pl-24 py-[110px] gap-[60px]">
+      <div className="flex flex-col mx-auto py-[110px] gap-[60px]">
         {/* Dynamic Header Section */}
         <div className="flex flex-col items-center text-center justify-center">
           <p className="text-[#0A0A0AB2] text-sm font-semibold">
@@ -89,7 +89,7 @@ const Effectively = () => {
         </div>
 
         {/* Scrollable container */}
-        <div className="max-w-[1512px] w-full mx-auto ">
+        <div className="max-w-[1512px] w-full mx-auto pl-24">
           <div
             ref={scrollContainerRef}
             onMouseDown={handleMouseDown}
