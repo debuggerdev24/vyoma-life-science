@@ -4,8 +4,8 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white pt-12">
-      <div className="container relative overflow-hidden mx-auto px-6">
+    <footer className="w-full bg-black text-white p-8 lg:pt-12">
+      <div className="container relative overflow-hidden mx-auto ">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-[213px] mb-[60px]">
           {/* Left Column */}
@@ -18,7 +18,8 @@ export default function Footer() {
               />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
-             Herbal crop protection solutions for safer, sustainable, and residue-free farming.
+              Herbal crop protection solutions for safer, sustainable, and
+              residue-free farming.
             </p>
 
             {/* Social Icons */}
@@ -52,22 +53,34 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className="hover:text-white transition-colors">
+                  <Link
+                    href="/about"
+                    className="hover:text-white transition-colors"
+                  >
                     About us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/product" className="hover:text-white transition-colors">
+                  <Link
+                    href="/product"
+                    className="hover:text-white transition-colors"
+                  >
                     Products
                   </Link>
                 </li>
                 <li>
-                  <Link href="/how-to-use" className="hover:text-white transition-colors">
+                  <Link
+                    href="/how-to-use"
+                    className="hover:text-white transition-colors"
+                  >
                     How to Use
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-white transition-colors">
+                  <Link
+                    href="/contact"
+                    className="hover:text-white transition-colors"
+                  >
                     Contact
                   </Link>
                 </li>
@@ -106,17 +119,26 @@ export default function Footer() {
               <h3 className="font-semibold mb-5">SUPPORT</h3>
               <ul className="font-normal text-white/80 text-sm space-y-2">
                 <li>
-                  <Link href="/faq" className="hover:text-white transition-colors">
+                  <Link
+                    href="/faq"
+                    className="hover:text-white transition-colors"
+                  >
                     FAQs
                   </Link>
                 </li>
                 <li>
-                  <Link href="/privacy-policy" className="hover:text-white transition-colors">
+                  <Link
+                    href="/privacy-policy"
+                    className="hover:text-white transition-colors"
+                  >
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="/terms" className="hover:text-white transition-colors">
+                  <Link
+                    href="/terms"
+                    className="hover:text-white transition-colors"
+                  >
                     Terms & Conditions
                   </Link>
                 </li>

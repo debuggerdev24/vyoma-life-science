@@ -1,7 +1,7 @@
 const BlogSection = () => {
   return (
     <div className="w-full bg-[#F6F7F1] ">
-      <div className="max-w-[1512px] mx-auto px-6 md:px-24 mb-[110px] ">
+      <div className="max-w-[1512px] mx-auto px-6 md:px-24 pb-[110px] ">
         {/* Section Header */}
         <div className="flex flex-col items-center text-center mb-16">
           <div className="text-[#0A0A0AB2] font-semibold text-sm">

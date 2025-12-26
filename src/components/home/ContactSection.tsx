@@ -85,7 +85,13 @@ const ContactSection = () => {
     });
 
     // If no errors, submit the form
-    if (!nameError && !mobileError && !stateError && !cropError && !messageError) {
+    if (
+      !nameError &&
+      !mobileError &&
+      !stateError &&
+      !cropError &&
+      !messageError
+    ) {
       // TODO: Add your form submission logic here
       console.log("Form submitted successfully:", {
         name,
@@ -94,7 +100,7 @@ const ContactSection = () => {
         crop,
         message,
       });
-      
+
       // Reset form
       setName("");
       setMobile("");
@@ -108,7 +114,7 @@ const ContactSection = () => {
         crop: "",
         message: "",
       });
-      
+
       alert("Thank you! Our team will contact you soon.");
     }
   };
@@ -136,13 +142,12 @@ const ContactSection = () => {
     setErrors((prev) => ({ ...prev, [field]: error }));
   };
 
-
   return (
     <section className="bg-white">
       <div className=" mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* Left Column - Dark Green Background */}
-          <div className="bg-[#1F4E3D] p-8 lg:p-16 relative overflow-hidden">
+          <div className="bg-[#1F4E3D] px-10 lg:px-24 py-14 lg:py-[110px] relative overflow-hidden ">
             {/* Decorative plant illustration */}
             <div className="absolute bottom-0 left-0 opacity-10">
               <img
@@ -152,7 +157,7 @@ const ContactSection = () => {
               />
             </div>
 
-            <div className="relative z-10">
+            <div className="relative z-10 max-w-[600px] ml-auto">
               <p className="text-white/70 font-semibold text-sm">
                 Let's Grow Better
               </p>
@@ -259,7 +264,7 @@ const ContactSection = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="py-14 lg:py-[110px] px-10 lg:px-[70px]">
+          <div className="py-14 lg:py-[110px] px-10 lg:px-24 max-w-[740px]">
             <h2 className="text-[#0A0A0A] md:text-[56px] text-3xl font-normal md:leading-[65px] mb-[10px]">
               Send an Enquiry
             </h2>

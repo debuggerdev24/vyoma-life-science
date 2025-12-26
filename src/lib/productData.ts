@@ -78,7 +78,7 @@ export const products: Product[] = [
     slug: "rudra",
     name: "RUDRA",
     subtitle: "Plant Protector Against Pests",
-    image: "/arka.png",
+    image: "/rudra.png",
     tags: [
       {
         label: "Pest Control",

@@ -4,10 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import ProductDropDown from "./common/ProductDropDown";
+import { products } from "@/lib/productData";
+import ProductsGrid from "./common/ProductsGrid";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
 
   const navLinks = [
     { href: "/", label: "Home" },
@@ -57,14 +61,26 @@ export default function Navbar() {
           <ul className="hidden lg:flex items-center gap-10 text-[#0A0A0A] text-sm font-medium">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
+              const isProductLink = link.label === "Product";
+
               return (
-                <li key={link.href} className="relative">
+                <li
+                  key={link.href}
+                  className="relative"
+                  onMouseEnter={() =>
+                    isProductLink && setIsProductDropdownOpen(true)
+                  }
+                  onMouseLeave={() =>
+                    isProductLink && setIsProductDropdownOpen(false)
+                  }
+                >
                   <Link href={link.href} className="pb-1 transition-colors">
                     {link.label}
                   </Link>
                   {isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 top-[42px] h-[2px] bg-[#1F4E3D] rounded-full" />
+                    <span className="absolute bottom-0 left-0 right-0 top-5 border-b-2 border-b-[#1F4E3D] h-[24px] " />
                   )}
+                  <span className="absolute bottom-0 left-0 right-0 top-5 cursor-pointer h-[24px] " />
                 </li>
               );
             })}
@@ -101,6 +117,17 @@ export default function Navbar() {
             />
           </button>
         </div>
+
+        {/* Product Dropdown - Desktop Only */}
+        {isProductDropdownOpen && (
+          <div
+            className="hidden lg:block absolute left-0 right-0 bg-white shadow-lg z-50 border-t border-gray-100"
+            onMouseEnter={() => setIsProductDropdownOpen(true)}
+            onMouseLeave={() => setIsProductDropdownOpen(false)}
+          >
+            <ProductDropDown products={products} />
+          </div>
+        )}
 
         {/* Mobile Menu */}
         <div
