@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white p-8 lg:pt-12">
+    <footer className="w-full bg-black text-white pt-8 px-8 lg:pt-12">
       <div className="container relative overflow-hidden mx-auto ">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-[213px] mb-[60px]">
