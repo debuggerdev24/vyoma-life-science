@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HeroSection = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
@@ -32,18 +34,25 @@ const HeroSection = () => {
           </div>
           <div className="w-full flex flex-wrap gap-4 justify-between">
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
-                View Products
-              </button>
-              <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium transition-colors">
-                Talk to Our Expert
-              </button>
+              <Link href="/product">
+                <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
+                  View Products
+                </button>
+              </Link>
+              <Link href="/contact-us">
+                <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium transition-colors">
+                  Talk to Our Expert
+                </button>
+              </Link>
             </div>
 
-            <div className="flex gap-2 items-end text-white text-xl font-normal">
+            <Link
+              href="/about"
+              className="flex gap-2 items-end text-white text-xl font-normal"
+            >
               <img src="/mouse.png" alt="explore more" className="w-6 h-6" />
               <span>Explore More</span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

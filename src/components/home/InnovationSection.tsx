@@ -124,7 +124,7 @@ const InnovationSection = () => {
               onClick={() => setCurrentSlide(index)}
               className={`w-2 h-2 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? "bg-[#0A0A0A] w-6"
+                  ? "bg-[#0A0A0A]"
                   : "bg-[#0A0A0A]/30 hover:bg-[#0A0A0A]/50"
               }`}
               aria-label={`Go to slide ${index + 1}`}

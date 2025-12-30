@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 interface QuoteSectionProps {
   backgroundImage: string;
@@ -6,6 +7,8 @@ interface QuoteSectionProps {
   heading: string | React.ReactNode;
   primaryButtonText: string;
   secondaryButtonText: string;
+  primaryButtonLink?: string;
+  secondaryButtonLink?: string;
 }
 
 const QuoteSection: React.FC<QuoteSectionProps> = ({
@@ -14,6 +17,8 @@ const QuoteSection: React.FC<QuoteSectionProps> = ({
   heading,
   primaryButtonText,
   secondaryButtonText,
+  primaryButtonLink,
+  secondaryButtonLink,
 }) => {
   return (
     <div className="relative w-full overflow-hidden">
@@ -44,12 +49,28 @@ const QuoteSection: React.FC<QuoteSectionProps> = ({
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-              <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-semibold text-sm transition-colors">
-                {primaryButtonText}
-              </button>
-              <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium text-sm transition-colors">
-                {secondaryButtonText}
-              </button>
+              {primaryButtonLink ? (
+                <Link href={primaryButtonLink}>
+                  <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-semibold text-sm transition-colors">
+                    {primaryButtonText}
+                  </button>
+                </Link>
+              ) : (
+                <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-semibold text-sm transition-colors">
+                  {primaryButtonText}
+                </button>
+              )}
+              {secondaryButtonLink ? (
+                <Link href={secondaryButtonLink}>
+                  <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium text-sm transition-colors">
+                    {secondaryButtonText}
+                  </button>
+                </Link>
+              ) : (
+                <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium text-sm transition-colors">
+                  {secondaryButtonText}
+                </button>
+              )}
             </div>
           </div>
         </div>

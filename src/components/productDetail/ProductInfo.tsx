@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Product } from "@/lib/productData";
 
@@ -6,6 +7,16 @@ interface ProductInfoProps {
 }
 
 const ProductInfo = ({ product }: ProductInfoProps) => {
+  const handleDownloadBrochure = () => {
+    // Create a dummy PDF download link
+    const link = document.createElement("a");
+    link.href = "/product-brochure.pdf"; // Path to dummy PDF in public folder
+    link.download = `${product.name}-Brochure.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section className="w-full mx-auto">
       <div className="border border-[#0A0A0A1A]">
@@ -59,7 +70,10 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
               <button className="bg-[#1F4E3D] text-white font-semibold text-sm px-[35px] py-[15px] hover:bg-[#1a4234] transition-colors w-full sm:w-auto">
                 Buy / Enquiry
               </button>
-              <button className="bg-[#EABE0D] text-white font-semibold text-sm px-[35px] py-[15px] hover:bg-[#d4af2b] transition-colors w-full sm:w-auto">
+              <button
+                onClick={handleDownloadBrochure}
+                className="bg-[#EABE0D] text-white font-semibold text-sm px-[35px] py-[15px] hover:bg-[#d4af2b] transition-colors w-full sm:w-auto"
+              >
                 Product Brochure
               </button>
             </div>

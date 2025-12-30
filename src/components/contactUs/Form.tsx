@@ -341,9 +341,9 @@ const Form = () => {
 
           {/* Right Column - Contact Form */}
           <div className="bg-white mt-10 p-6 lg:p-[50px] max-w-[740px]">
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form className="" onSubmit={handleSubmit}>
               {/* Name Field */}
-              <div>
+              <div className="mb-6">
                 <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                   Name
                 </label>
@@ -365,7 +365,7 @@ const Form = () => {
               </div>
 
               {/* Mobile Number Field */}
-              <div>
+              <div className="mb-6">
                 <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                   Mobile Number
                 </label>
@@ -387,7 +387,7 @@ const Form = () => {
               </div>
 
               {/* Email ID Field */}
-              <div>
+              <div className="mb-6">
                 <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                   Email ID
                 </label>
@@ -409,7 +409,7 @@ const Form = () => {
               </div>
 
               {/* Address Field */}
-              <div>
+              <div className="mb-6">
                 <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                   Address
                 </label>
@@ -431,7 +431,7 @@ const Form = () => {
               </div>
 
               {/* State, City, Village Row */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
                 {/* State */}
                 <div>
                   <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
@@ -528,7 +528,7 @@ const Form = () => {
               </div>
 
               {/* Crop Name Field */}
-              <div>
+              <div className="mb-6">
                 <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                   Crop Name
                 </label>
@@ -550,7 +550,7 @@ const Form = () => {
               </div>
 
               {/* Issue or Query Field */}
-              <div>
+              <div className="mb-6">
                 <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                   Issue or Query
                 </label>
@@ -580,7 +580,7 @@ const Form = () => {
               </button>
 
               {/* Response Time Notice */}
-              <p className="text-[#0A0A0A]/60 italic text-sm text-left">
+              <p className="text-[#0A0A0A]/60 italic text-sm text-left mt-[5px]">
                 We respond within 24–48 hours.
               </p>
             </form>

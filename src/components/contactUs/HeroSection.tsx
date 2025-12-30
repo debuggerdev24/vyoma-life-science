@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HeroSection = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden">
@@ -25,7 +27,7 @@ const HeroSection = () => {
 
             {/* Description */}
             <p className="text-white/90 text-xl mb-5 max-w-[785px]">
-              We’re here to guide you with crop solutions, product support, and
+              We're here to guide you with crop solutions, product support, and
               sustainable farming practices.
             </p>
           </div>
@@ -65,9 +67,11 @@ const HeroSection = () => {
           </div>
           <div className="w-full flex flex-wrap gap-4 justify-between">
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
-                Watch Demo Video
-              </button>
+              <Link href="/how-to-use#video-player">
+                <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
+                  Watch Demo Video
+                </button>
+              </Link>
             </div>
 
             <div className="flex gap-2 items-end text-white text-xl font-normal">

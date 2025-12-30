@@ -9,6 +9,8 @@ const AboutQuoteSection = () => {
       heading="Uniting Farmers, Dealers and Institutions to Build a Safe and Sustainable Future for Agriculture"
       primaryButtonText="Speak to our expert"
       secondaryButtonText="View our products"
+      primaryButtonLink="/contact-us"
+      secondaryButtonLink="/product"
     />
   );
 };

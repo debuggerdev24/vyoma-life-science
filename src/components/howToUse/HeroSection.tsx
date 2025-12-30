@@ -63,9 +63,11 @@ const HeroSection = () => {
           </div>
           <div className="w-full flex flex-wrap gap-4 justify-between">
             <div className="flex gap-4">
-              <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
-                Watch Demo Video
-              </button>
+              <a href="#video-player">
+                <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
+                  Watch Demo Video
+                </button>
+              </a>
             </div>
 
             <div className="flex gap-2 items-end text-white text-xl font-normal">

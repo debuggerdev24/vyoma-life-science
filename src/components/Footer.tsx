@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black text-white pt-8 px-8 lg:pt-12">
+    <footer className="w-full bg-black text-white pt-8 px-6 md:px-12 lg:px-24 lg:pt-12">
       <div className="container relative overflow-hidden mx-auto ">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-[213px] mb-[60px]">
@@ -25,17 +25,26 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex items-center gap-[14px] text-xl">
               <div className="rounded-full border-[1px] border-white/10 p-[15px]">
-                <Link href="#" className="hover:text-green-500">
+                <Link
+                  href="https://www.facebook.com/"
+                  className="hover:text-green-500"
+                >
                   <FaFacebookF />
                 </Link>
               </div>
               <div className="rounded-full border-[1px] border-white/10 p-[15px]">
-                <Link href="#" className="hover:text-green-500">
+                <Link
+                  href="https://www.instagram.com/?hl=en"
+                  className="hover:text-green-500"
+                >
                   <FaInstagram />
                 </Link>
               </div>
               <div className="rounded-full border-[1px] border-white/10 p-[15px]">
-                <Link href="#" className="hover:text-green-500">
+                <Link
+                  href="https://www.youtube.com/"
+                  className="hover:text-green-500"
+                >
                   <FaYoutube />
                 </Link>
               </div>
@@ -78,7 +87,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/contact"
+                    href="/contact-us"
                     className="hover:text-white transition-colors"
                   >
                     Contact
@@ -92,22 +101,34 @@ export default function Footer() {
               <h3 className="font-semibold mb-5">OUR PRODUCTS</h3>
               <ul className="font-normal text-white/80 text-sm flex flex-col gap-2">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link
+                    href="/productDetail/mitra"
+                    className="hover:text-white transition-colors"
+                  >
                     MITRA - Viral Immunity
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link
+                    href="/productDetail/arka"
+                    className="hover:text-white transition-colors"
+                  >
                     AKRA - Fungal & Bacterial
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link
+                    href="/productDetail/jiva"
+                    className="hover:text-white transition-colors"
+                  >
                     JIVA - Growth Promoter
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link
+                    href="/productDetail/rudra"
+                    className="hover:text-white transition-colors"
+                  >
                     RUDRA - Pest Control
                   </Link>
                 </li>

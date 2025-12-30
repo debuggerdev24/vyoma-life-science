@@ -15,7 +15,10 @@ const VideoPlayer = () => {
   };
 
   return (
-    <section className="max-w-[1512px] mx-auto px-6 md:px-24 py-[50px] md:py-[110px]">
+    <section
+      id="video-player"
+      className="max-w-[1512px] mx-auto px-6 md:px-24 py-[50px] md:py-[110px]"
+    >
       <div className="flex flex-col items-center">
         <p className="text-[#0A0A0AB2] font-semibold text-sm">
           Watch How to Apply It
