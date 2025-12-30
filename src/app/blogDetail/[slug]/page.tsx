@@ -153,7 +153,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   <span className="text-[#0A0A0A]/60 mt-[3px]">•</span>
                   <span>
                     <span className="font-semibold text-[#0A0A0A]/60 text-[14px] lg:text-[16px] leading-[150%]">
-                      {" "}
+                      Carbon Footprint :{" "}
                     </span>
                     Accounting for CO2 emissions across farming practices.
                   </span>
@@ -163,7 +163,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   <span className="text-[#0A0A0A]/60 mt-[3px]">•</span>
                   <span>
                     <span className="font-semibold text-[#0A0A0A]/60 text-[14px] lg:text-[16px] leading-[150%]">
-                      {" "}
+                      Water Footprint :{" "}
                     </span>
                     Tracking efficient water use and conservation efforts.
                   </span>
@@ -173,7 +173,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   <span className="text-[#0A0A0A]/60 mt-[3px]">•</span>
                   <span>
                     <span className="font-semibold text-[#0A0A0A]/60 text-[14px] lg:text-[16px] leading-[150%]">
-                      {" "}
+                      Sustainable Landscape :{" "}
                     </span>
                     Promoting deforestation-free production and biodiversity
                     protection.
@@ -184,7 +184,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   <span className="text-[#0A0A0A]/60 mt-[3px]">•</span>
                   <span>
                     <span className="font-semibold text-[#0A0A0A]/60 text-[14px] lg:text-[16px] leading-[150%]">
-                      {" "}
+                      EIQ (Environmental Impact Quotient) :{" "}
                     </span>
                     Assessing pesticide and fertilizer use.
                   </span>
@@ -272,7 +272,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                     <span className="text-[#0A0A0A]/60 mt-[3px]">•</span>
                     <span>
                       <span className="font-semibold text-[#0A0A0A]/60 text-[14px] lg:text-[16px] leading-[150%]">
-                        CCrop Story™ :{" "}
+                        Crop Story™ :{" "}
                       </span>
                       Enables full traceability from farm to market in 60 crops
                       types & more
@@ -345,7 +345,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
             </div>
 
             {/* Previous/Next Navigation */}
-            <div className="flex justify-between items-center mt-8 lg:mt-12 pt-6 lg:pt-8 border-t border-[#0000001A]">
+            <div className="flex justify-between items-center mt-8 lg:mt-[50px] pt-6 ">
               {prevPost ? (
                 <Link
                   href={`/blogDetail/${prevPost.slug}`}
@@ -367,7 +367,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                       <path d="M15 6l-6 6l6 6" />
                     </svg>
                   </div>
-                  <span className="text-[#0A0A0A] font-medium text-sm lg:text-base">
+                  <span className="text-[#0A0A0A] font-semibold text-[16px] leading-[140%]">
                     Prev Post
                   </span>
                 </Link>
@@ -379,7 +379,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                   href={`/blogDetail/${nextPost.slug}`}
                   className="flex items-center gap-2 lg:gap-3 group"
                 >
-                  <span className="text-[#0A0A0A] font-medium text-sm lg:text-base">
+                  <span className="text-[#0A0A0A] font-semibold text-[16px] leading-[140%]">
                     Next Post
                   </span>
                   <div className="flex justify-center items-center w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] bg-[#EABE0D] rounded-full group-hover:bg-[#d4ab0c] transition-colors">
@@ -433,7 +433,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
                     alt={post.title}
                     className="w-[100px] h-[70px] object-cover"
                   />
-                  <span className="text-[#0A0A0A]/60 text-base font-medium">
+                  <span className="text-[#0A0A0A]/60 text-base font-medium line-clamp-3">
                     {post.title}
                   </span>
                 </Link>

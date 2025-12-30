@@ -14,9 +14,9 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
         </div>
       </div>
       <div className="py-8 md:py-16 lg:py-24 px-6 md:px-12 lg:px-24 max-w-[1512px] flex mx-auto">
-        <div className="flex flex-col lg:flex-row gap-8 md:gap-10 lg:gap-[50px] items-start w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 lg:gap-[50px] items-start w-full">
           {/* Left - Product Image */}
-          <div className="flex-shrink-0 w-full lg:w-[648px]">
+          <div className="flex-shrink-0 w-full">
             <img
               src={product.image}
               alt={product.name}

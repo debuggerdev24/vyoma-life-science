@@ -79,17 +79,17 @@ const Effectively = () => {
           <p className="text-[#0A0A0AB2] text-sm font-semibold">
             {headerData.subtitle}
           </p>
-          <div className="text-[#0A0A0A] text-[56px] font-normal tracking-[-4px] leading-[65px]">
+          <div className="text-[#0A0A0A] lg:text-[56px] text-3xl font-normal lg:tracking-[-4px] lg:leading-[65px]">
             {headerData.title}
           </div>
           
-          <div className="text-[#0A0A0A]/60 max-w-[873px] text-sm font-normal mt-[10px]">
+          <div className="text-[#0A0A0A]/60 max-w-[873px] text-sm font-normal mt-[10px] px-6">
             {headerData.description}
           </div>
         </div>
 
         {/* Scrollable container */}
-        <div className="max-w-[1512px] w-full mx-auto pl-24">
+        <div className="max-w-[1512px] w-full mx-auto pl-6 md:pl-12 lg:pl-24">
           <div
             ref={scrollContainerRef}
             onMouseDown={handleMouseDown}
