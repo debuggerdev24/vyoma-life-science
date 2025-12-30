@@ -19,36 +19,53 @@ const HeroSection = () => {
             {/* Main Heading */}
             <h1 className="text-5xl lg:text-7xl lg:leading-[80px] font-normal text-white mb-6 lg:tracking-[-4px]">
               How to Use Our Products
-             
             </h1>
 
             {/* Description */}
             <p className="text-white/90 text-xl mb-5 max-w-[785px]">
-              Simple instructions for farmers, field teams, and agronomists to use Vyoma products correctly for maximum results.
+              Simple instructions for farmers, field teams, and agronomists to
+              use Vyoma products correctly for maximum results.
             </p>
           </div>
-          <div className="flex gap-[30px] mb-[30px]">
-              <div className="flex items-center gap-[5px]">
-                <img src="/correct.png" alt="correct" className="h-[18px] w-[18px]"/>
-                <p className="text-sm text-white leading-[140%] font-medium">Farmer spraying crops</p>
-              </div>
+          <div className="flex flex-wrap gap-[30px] mb-[30px]">
+            <div className="flex items-center gap-[5px]">
+              <img
+                src="/correct.png"
+                alt="correct"
+                className="h-[18px] w-[18px]"
+              />
+              <p className="text-sm text-white leading-[140%] font-medium">
+                Farmer spraying crops
+              </p>
+            </div>
 
-              <div className="flex items-center gap-[5px]">
-                <img src="/correct.png" alt="correct" className="h-[18px] w-[18px]"/>
-                <p className="text-sm text-white leading-[140%] font-medium">Close-up plant + sprayer</p>
-              </div>
+            <div className="flex items-center gap-[5px]">
+              <img
+                src="/correct.png"
+                alt="correct"
+                className="h-[18px] w-[18px]"
+              />
+              <p className="text-sm text-white leading-[140%] font-medium">
+                Close-up plant + sprayer
+              </p>
+            </div>
 
-              <div className="flex items-center gap-[5px]">
-                <img src="/correct.png" alt="correct" className="h-[18px] w-[18px]"/>
-                <p className="text-sm text-white leading-[140%] font-medium">Green gradient overlay</p>
-              </div>
+            <div className="flex items-center gap-[5px]">
+              <img
+                src="/correct.png"
+                alt="correct"
+                className="h-[18px] w-[18px]"
+              />
+              <p className="text-sm text-white leading-[140%] font-medium">
+                Green gradient overlay
+              </p>
+            </div>
           </div>
           <div className="w-full flex flex-wrap gap-4 justify-between">
             <div className="flex gap-4">
               <button className="px-6 py-3 bg-[#EABE0D] hover:bg-[#e5a612] text-white font-medium transition-colors">
                 Watch Demo Video
               </button>
-              
             </div>
 
             <div className="flex gap-2 items-end text-white text-xl font-normal">

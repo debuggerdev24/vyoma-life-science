@@ -51,7 +51,7 @@ const VisionSection = () => {
       imageAlt="Farmer in field"
       contentItems={contentItems}
       imagePosition="left"
-      containerClasses="max-w-[1512px] mx-auto px-6 md:px-24 py-[110px]"
+      containerClasses="max-w-[1512px] mx-auto px-6 md:px-24 py-[60px] md:py-[110px]"
     />
   );
 };

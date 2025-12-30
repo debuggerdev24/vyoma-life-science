@@ -19,7 +19,7 @@ export default function Navbar() {
     { href: "/product", label: "Product" },
     { href: "/how-to-use", label: "How to Use" },
     { href: "/blog", label: "Blog" },
-    { href: "/contact", label: "Contact us" },
+    { href: "/contact-us", label: "Contact us" },
   ];
 
   const toggleMobileMenu = () => {

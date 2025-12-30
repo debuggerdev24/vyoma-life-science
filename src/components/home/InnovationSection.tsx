@@ -47,7 +47,7 @@ const InnovationSection = () => {
         imageClasses="h-full lg:max-h-[922px] w-full lg:max-w-[621px] object-cover"
       />
 
-      <div className="flex flex-col justify-center items-center max-w-[850px] px-2 mx-auto">
+      <div className="flex flex-col justify-center items-center max-w-[850px] px-2 mx-auto mb-[110px]">
         <div className="text-[47px] leading-[50px] text-[#0A0A0A]">
           Yield Boost
         </div>

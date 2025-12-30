@@ -72,7 +72,7 @@ const ProductsGrid = ({
           <div className="font-semibold text-sm text-[#0A0A0AB2]">
             {sectionLabel}
           </div>
-          <div className="text-3xl lg:text-[56px] lg:leading-[65px] lg:tracking-[-4px] tracking-[-2px] text-center">
+          <div className="text-3xl lg:text-[56px] lg:leading-[65px] lg:tracking-[-4px]  text-center">
             {title}
           </div>
           <div className="flex text-center text-[#0A0A0A]/60 text-sm leading-[150%] font-normal max-w-[650px] mt-[10px]">
@@ -113,9 +113,7 @@ const ProductsGrid = ({
                 {/* Content Container */}
                 <div
                   className={`flex flex-col h-full ${
-                    variant === "default"
-                      ? "p-5 lg:p-[30px]"
-                      : "py-[10px] px-5 lg:px-0"
+                    variant === "default" ? "p-5 lg:p-[30px]" : "py-[10px]"
                   }`}
                 >
                   <p className="text-xl lg:text-[24px] font-medium text-[#0A0A0A]">

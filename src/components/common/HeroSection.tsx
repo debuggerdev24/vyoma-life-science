@@ -4,6 +4,7 @@ interface HeroSectionProps {
   description: string;
   showExploreMore?: boolean;
   overlayOpacity?: string;
+  minHeight?: string;
 }
 
 const HeroSection = ({
@@ -12,9 +13,10 @@ const HeroSection = ({
   description,
   showExploreMore = true,
   overlayOpacity = "bg-black/30",
+  minHeight = "min-h-screen",
 }: HeroSectionProps) => {
   return (
-    <div className="relative min-h-screen w-full overflow-hidden">
+    <div className={`relative ${minHeight} w-full overflow-hidden`}>
       {/* Background Image with Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -27,7 +29,7 @@ const HeroSection = ({
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center min-h-screen top-16">
+      <div className={`relative z-10 flex items-center ${minHeight} top-16`}>
         <div className="w-full max-w-[1512px] mx-auto px-6 md:px-12 lg:px-24 py-20">
           <div className="max-w-[1024px]">
             {/* Main Heading */}

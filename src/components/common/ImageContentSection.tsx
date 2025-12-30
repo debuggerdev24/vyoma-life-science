@@ -27,7 +27,7 @@ const ImageContentSection = ({
   contentItems,
   imagePosition = "left",
   bgColor = "bg-white",
-  containerClasses = "max-w-[1512px] mx-auto px-6 md:px-24 py-[110px]",
+  containerClasses = "max-w-[1512px] mx-auto px-6 md:px-24 py-[60px] md:py-[110px]",
   imageClasses = "w-full h-[826px] shadow-lg object-cover",
 }: ImageContentSectionProps) => {
   const ImageComponent = (

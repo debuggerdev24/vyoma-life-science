@@ -147,7 +147,7 @@ const ContactSection = () => {
       <div className=" mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* Left Column - Dark Green Background */}
-          <div className="bg-[#1F4E3D] px-10 lg:px-24 py-14 lg:py-[110px] relative overflow-hidden ">
+          <div className="bg-[#1F4E3D] px-10 lg:px-24 py-14 lg:py-[110px] relative overflow-hidden">
             {/* Decorative plant illustration */}
             <div className="absolute bottom-0 left-0 opacity-10">
               <img
@@ -157,7 +157,7 @@ const ContactSection = () => {
               />
             </div>
 
-            <div className="relative z-10 max-w-[600px] ml-auto">
+            <div className="relative z-10 max-w-[600px] lg:ml-auto">
               <p className="text-white/70 font-semibold text-sm">
                 Let's Grow Better
               </p>

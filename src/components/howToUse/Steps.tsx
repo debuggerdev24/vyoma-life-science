@@ -26,7 +26,7 @@ const Steps = ({
   subtitle,
   steps,
   bgColor = "bg-[#F6F7F1]",
-  containerClasses = "relative max-w-[1512px] mx-auto px-6 md:px-24 py-[110px]",
+  containerClasses = "relative max-w-[1512px] mx-auto px-6 md:px-24 py-[60px] md:py-[110px]",
 }: StepsProps) => {
   return (
     <section className={bgColor}>
@@ -134,12 +134,15 @@ const Steps = ({
                     {ContentComponent}
                   </>
                 )}
-               
               </div>
             );
           })}
         </div>
-         <img src="/wheat4.png" alt="wheat" className="absolute bottom-0 right-0 h-[399px] w-[296px]" />
+        <img
+          src="/wheat4.png"
+          alt="wheat"
+          className="absolute bottom-0 right-0 h-[399px] w-[296px]"
+        />
       </div>
     </section>
   );
