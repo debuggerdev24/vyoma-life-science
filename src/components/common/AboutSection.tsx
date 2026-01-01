@@ -4,6 +4,7 @@ interface AboutSectionProps {
   paragraphs: string[];
   buttonText?: string;
   showButton?: boolean;
+  id?: string;
 }
 
 const AboutSection: React.FC<AboutSectionProps> = ({
@@ -12,9 +13,10 @@ const AboutSection: React.FC<AboutSectionProps> = ({
   paragraphs,
   buttonText = "Explore More",
   showButton = true,
+  id,
 }) => {
   return (
-    <section className="bg-white py-14 lg:py-[110px]">
+    <section id={id} className="bg-white py-14 lg:py-[110px]">
       <div className="max-w-[1512px] mx-auto px-6 md:px-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left Column */}
@@ -30,11 +32,11 @@ const AboutSection: React.FC<AboutSectionProps> = ({
           {/* Right Column */}
           <div className="space-y-6">
             {paragraphs.map((paragraph, index) => (
-              <p 
-                key={index} 
+              <p
+                key={index}
                 className={
-                  index === 1 
-                    ? "text-[#0A0A0A]/60 text-xl font-normal leading-[150%]" 
+                  index === 1
+                    ? "text-[#0A0A0A]/60 text-xl font-normal leading-[150%]"
                     : "text-[#0A0A0A] text-xl font-normal leading-[150%]"
                 }
               >

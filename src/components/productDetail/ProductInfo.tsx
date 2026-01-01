@@ -17,11 +17,34 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
     document.body.removeChild(link);
   };
 
+  // Map original tag colors to new colors for product detail page
+  const getCustomTagColor = (originalBgColor: string): string => {
+    const colorMap: { [key: string]: string } = {
+      "bg-[#AF2B24]": "bg-[#E74C3C]/10",
+      "bg-[#115526]": "bg-[#1155261A]",
+      "bg-[#B48E1C]": "bg-[#F39C12]/10",
+      "bg-[#1F5571]": "bg-[#3498DB]/10",
+    };
+    return colorMap[originalBgColor] || originalBgColor;
+  };
+
+  // Map original text colors to new text colors for product detail page
+  const getCustomTextColor = (originalBgColor: string): string => {
+    const textColorMap: { [key: string]: string } = {
+      "bg-[#AF2B24]": "text-[#E74C3C]",
+      "bg-[#115526]": "text-[#27AE60]", // Green text
+      "bg-[#B48E1C]": "text-[#F39C12]", // Orange text
+      "bg-[#1F5571]": "text-[#3498DB]", // Blue text
+    };
+    return textColorMap[originalBgColor] || "text-white";
+  };
+
   return (
     <section className="w-full mx-auto">
       <div className="border border-[#0A0A0A1A]">
-        <div className="max-w-[1512px] mx-auto text-sm font-normal py-2 px-6 md:px-24  text-[#0A0A0ACC]">
-          Home / Products / {product.name}
+        <div className="max-w-[1512px] mx-auto text-[14px] leading-6 font-normal py-2 px-6 md:px-24  text-[#0A0A0ACC]">
+          Home / Products /{" "}
+          <span className="text-[#0A0A0A]">{product.name}</span>
         </div>
       </div>
       <div className="py-8 md:py-16 lg:py-24 px-6 md:px-12 lg:px-24 max-w-[1512px] flex mx-auto">
@@ -42,7 +65,11 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
               {product.tags.map((tag, index) => (
                 <div
                   key={index}
-                  className={`${tag.bgColor} px-[15px] py-[8px] ${tag.textColor} text-xs font-semibold`}
+                  className={`${getCustomTagColor(
+                    tag.bgColor
+                  )} px-[15px] py-[8px] ${getCustomTextColor(
+                    tag.bgColor
+                  )} text-xs font-semibold`}
                 >
                   {tag.label}
                 </div>

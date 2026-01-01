@@ -89,7 +89,7 @@ const RealResult = () => {
 
         {/* Main Content */}
         <div className="flex flex-col w-full">
-          <div className="grid grid-cols-2 w-full max-w-[900px] mx-auto h-[250px] sm:h-[300px] md:h-[350px] lg:h-[450px] gap-2 md:gap-0">
+          <div className="grid grid-cols-2 w-full max-w-[900px] mx-auto h-[250px] sm:h-[300px] md:h-[350px] lg:h-[450px]">
             <div className="overflow-hidden relative border border-[#EABE0D] border-2">
               <div className="bg-gradient-to-b from-transparent to-black from-50% to-100% absolute inset-0"></div>
               <img

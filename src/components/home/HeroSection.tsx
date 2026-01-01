@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -46,13 +48,16 @@ const HeroSection = () => {
               </Link>
             </div>
 
-            <Link
-              href="/about"
-              className="flex gap-2 items-end text-white text-xl font-normal"
+            <button
+              onClick={() => {
+                const aboutSection = document.getElementById("about-section");
+                aboutSection?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="flex gap-2 items-end text-white text-xl font-normal cursor-pointer hover:opacity-80 transition-opacity"
             >
               <img src="/mouse.png" alt="explore more" className="w-6 h-6" />
               <span>Explore More</span>
-            </Link>
+            </button>
           </div>
         </div>
       </div>

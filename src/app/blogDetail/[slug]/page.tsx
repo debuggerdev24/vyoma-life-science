@@ -35,7 +35,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
       {/* Breadcrumb */}
       <div className="border border-[#0000001A]">
         <div className="max-w-[1512px] mx-auto px-6 lg:px-24 py-2">
-          <div className="flex items-center gap-2 text-sm text-[#0A0A0A]/60">
+          <div className="flex items-center gap-2 text-sm text-[#0A0A0ACC]">
             <Link href="/home" className="hover:text-[#1F4E3D]">
               Home
             </Link>
@@ -44,7 +44,7 @@ export default async function BlogDetailPage({ params }: BlogDetailPageProps) {
               Blog
             </Link>
             <span>/</span>
-            <span className="text-[#0A0A0A]/40 truncate max-w-[300px]">
+            <span className="text-[#0A0A0A] truncate max-w-[300px]">
               {blog.title}
             </span>
           </div>

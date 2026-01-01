@@ -147,7 +147,7 @@ const ContactSection = () => {
       <div className=" mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
           {/* Left Column - Dark Green Background */}
-          <div className="bg-[#1F4E3D] px-10 lg:px-24 py-14 lg:py-[110px] relative overflow-hidden">
+          <div className="bg-[#1F4E3D] px-6 lg:px-24 py-14 lg:py-[110px] relative overflow-hidden">
             {/* Decorative plant illustration */}
             <div className="absolute bottom-0 left-0 opacity-10">
               <img
@@ -202,19 +202,11 @@ const ContactSection = () => {
                 {/* Email */}
                 <div className="flex items-center md:gap-4 gap-2">
                   <div className="md:w-[61px] md:h-[61px] h-[45px] w-[45px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-[30px] h-[30px] text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
+                    <img
+                      src="/mail.png"
+                      alt="mail"
+                      className="w-[30px] h-[30px]"
+                    />
                   </div>
                   <div>
                     <p className="text-white/60 text-base font-normal mb-1">
@@ -264,7 +256,7 @@ const ContactSection = () => {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="py-14 lg:py-[110px] px-10 lg:px-24 max-w-[740px]">
+          <div className="py-14 lg:py-[110px] px-6 lg:px-24 max-w-[740px]">
             <h2 className="text-[#0A0A0A] md:text-[56px] text-3xl font-normal md:leading-[65px] mb-[10px]">
               Send an Enquiry
             </h2>
@@ -329,7 +321,7 @@ const ContactSection = () => {
                     onBlur={(e) => handleBlur("state", e.target.value)}
                     className={`w-full px-4 py-3 bg-white border rounded text-sm
                       focus:outline-none transition-colors
-                      ${state === "" ? "text-gray-500" : "text-black"}
+                      ${state === "" ? "text-gray-500" : "text-[#0A0A0A]"}
                       ${
                         errors.state
                           ? "border-red-500 focus:border-red-500"

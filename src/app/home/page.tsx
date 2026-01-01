@@ -18,6 +18,7 @@ const Home = () => {
       <HeroSection />
       <LogosSection />
       <AboutSection
+        id="about-section"
         tag="About Vyoma Life Sciences"
         title={
           <>

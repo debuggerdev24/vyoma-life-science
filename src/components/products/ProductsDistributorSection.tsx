@@ -46,7 +46,7 @@ export default function ProductsDistributorSection() {
             opportunities for growth and partnership. Let's grow together!
           </p>
           <Link href="/contact-us">
-            <button className="bg-[#E8C132] text-white font-medium text-sm px-8 py-4 hover:bg-[#d4af2b] transition-colors">
+            <button className="bg-[#E8C132] text-white font-medium text-sm md:px-[74px] px-10 py-4 hover:bg-[#d4af2b] transition-colors">
               Explore and connect
             </button>
           </Link>

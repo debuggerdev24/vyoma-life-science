@@ -59,7 +59,7 @@ export default function BlogPage() {
         description="Stay updated with the latest news, insights, and achievements from our team. Discover how we're shaping the future of agroiculture with innovation and dedication."
         showExploreMore={true}
       />
-      <div className=" bg-[#F6F7F1]">
+      <div id="about-section" className=" bg-[#F6F7F1]">
         <div className="max-w-[1512px] mx-auto">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 px-6 md:px-12 lg:px-24 py-14 lg:py-[110px]">
             {/* left side section */}

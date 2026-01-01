@@ -27,6 +27,7 @@ export interface ProductsGridProps {
   variant?: "default" | "steps";
   isbgImageVisible?: boolean;
   ctaButtonLabel?: string;
+  id?: string;
 }
 
 const ProductsGrid = ({
@@ -38,6 +39,7 @@ const ProductsGrid = ({
   variant = "default",
   isbgImageVisible = false,
   ctaButtonLabel = "",
+  id,
 }: ProductsGridProps) => {
   const router = useRouter();
 
@@ -47,6 +49,7 @@ const ProductsGrid = ({
 
   return (
     <section
+      id={id}
       className={`relative ${variant === "steps" ? "" : "bg-[#F6F7F1]"}`}
     >
       <div
@@ -72,7 +75,7 @@ const ProductsGrid = ({
           <div className="font-semibold text-sm text-[#0A0A0AB2]">
             {sectionLabel}
           </div>
-          <div className="text-3xl lg:text-[56px] lg:leading-[65px] lg:tracking-[-4px]  text-center">
+          <div className="text-[22px] sm:text-2xl lg:text-[56px] leading-tight lg:leading-[65px] tracking-tight lg:tracking-[-4px] text-center break-words px-4">
             {title}
           </div>
           <div className="flex text-center text-[#0A0A0A]/60 text-sm leading-[150%] font-normal max-w-[650px] mt-[10px]">

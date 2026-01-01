@@ -219,7 +219,7 @@ const Form = () => {
   };
 
   return (
-    <section className="w-full bg-[#F6F7F1] relative">
+    <section id="about-section" className="w-full bg-[#F6F7F1] relative">
       <div className="max-w-[1512px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 px-6 lg:px-24 py-14 lg:py-[110px]">
           {/* Left Column - Dark Green Background */}
@@ -278,19 +278,11 @@ const Form = () => {
                 {/* Email */}
                 <div className="flex items-center md:gap-4 gap-2">
                   <div className="md:w-[61px] md:h-[61px] h-[45px] w-[45px] bg-[#FDB714] rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg
-                      className="w-[30px] h-[30px] text-white"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
+                    <img
+                      src="/mail.png"
+                      alt="mail"
+                      className="w-[30px] h-[30px]"
+                    />
                   </div>
                   <div>
                     <p className="text-[#0A0A0A]/60 text-base font-normal mb-1">

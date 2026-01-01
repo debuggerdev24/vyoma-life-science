@@ -42,7 +42,7 @@ const MakesUsDifferent = () => {
       imageAlt="Makes us different"
       contentItems={contentItems}
       imagePosition="right"
-      imageClasses="h-full min-h-[922px] w-full max-w-[621px] object-cover"
+      imageClasses="h-full min-h-[922px] w-full object-cover"
     />
   );
 };

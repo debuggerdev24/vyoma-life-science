@@ -95,11 +95,11 @@ const InnovationSection = () => {
         imageClasses="h-full lg:max-h-[922px] w-full lg:max-w-[621px] object-cover"
       />
 
-      <div className="flex flex-col justify-center items-center max-w-[850px] px-2 mx-auto lg:mb-[110px] mb-[50px]">
-        <div className="text-[47px] leading-[50px] text-[#0A0A0A]">
+      <div className="flex flex-col justify-center items-center max-w-[850px] px-3 mx-auto lg:mb-[110px] mb-[50px]">
+        <div className="text-3xl md:text-[47px] md:leading-[50px] text-[#0A0A0A]">
           {testimonials[currentSlide].title}
         </div>
-        <div className="text-center text-[23px] font-normal mt-5 text-[#0A0A0ACC]">
+        <div className="text-center text-md md:text-[23px] font-normal mt-5 text-[#0A0A0ACC]">
           {testimonials[currentSlide].quote}
         </div>
         <div className="flex flex-col items-center mb-[5px] mt-[45px]">

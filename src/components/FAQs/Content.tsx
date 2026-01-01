@@ -7,7 +7,7 @@ const Content = () => {
       id: "01",
       question: "How often should I apply these products?",
       answer:
-        "Application frequency depends on the crop and growth stage. Generally, apply every 10-15 days during vegetative growth or as recommended on the product label. For preventive care, apply before expected pest or disease pressure.",
+        "Most products can be applied every 10–12 days depending on crop stage and infection intensity. Preventive cycles give best results.",
     },
     {
       id: "02",
@@ -23,13 +23,13 @@ const Content = () => {
     },
     {
       id: "04",
-      question: "Can I use it to prevent as well as cure plant diseases?",
+      question: "Can I use it for preventive farming or only when damaged?",
       answer:
         "Absolutely. Our products work both as preventive and curative solutions. For best results, use them preventively before disease onset and continue applications as directed during active infections.",
     },
     {
       id: "05",
-      question: "What is the shelf life of the products?",
+      question: "What is the correct dosage?",
       answer:
         "When stored properly in a cool, dry place away from direct sunlight, our products typically have a shelf life of 2-3 years. Check the manufacturing date and expiry date printed on the packaging.",
     },
@@ -39,13 +39,13 @@ const Content = () => {
   const safetyCompatibilityFAQs = [
     {
       id: "01",
-      question: "Can they be mixed with fertilizers or chemicals?",
+      question: "Can they be mixed with fertilizers or pesticides?",
       answer:
-        "Yes, our products are compatible with most organic fertilizers and biopesticides. However, avoid mixing with strong chemical pesticides or copper-based fungicides. Always perform a compatibility test before large-scale tank mixing.",
+        "Compatible with most bio-inputs & nutrition sprays, but avoid mixing with strong chemical antivirals or harsh pesticides.",
     },
     {
       id: "02",
-      question: "Are farmers allowed to mix it along side other sprays?",
+      question: "Are Vyoma products safe for organic farming?",
       answer:
         "Farmers can mix our products with other plant-based or organic sprays. Avoid mixing with synthetic chemicals unless recommended by our technical team. Always follow the order of mixing: water first, then products.",
     },
@@ -57,7 +57,7 @@ const Content = () => {
     },
     {
       id: "04",
-      question: "Are there any usage restrictions for different climates?",
+      question: "Will it harm bees or beneficial insects?",
       answer:
         "Our products work effectively in various climatic conditions. However, avoid spraying during extreme heat (above 35°C) or heavy rains. Early morning or late evening applications are recommended for optimal absorption.",
     },
@@ -73,13 +73,13 @@ const Content = () => {
     },
     {
       id: "02",
-      question: "Is your product delivered to rural areas too?",
+      question: "Do you offer bulk or dealer supply?",
       answer:
         "Yes, we deliver to both urban and rural locations across India. We work with reliable logistics partners to ensure timely delivery even to remote farming regions.",
     },
     {
       id: "03",
-      question: "Do you offer farmers wholesale or bulk orders?",
+      question: "Do you deliver across India?",
       answer:
         "Yes, we offer wholesale pricing for bulk orders. Farmers, FPOs, and agricultural cooperatives can contact our sales team for special pricing and volume discounts.",
     },
@@ -89,19 +89,19 @@ const Content = () => {
   const supportAssistanceFAQs = [
     {
       id: "01",
-      question: "How do I know which product is best for my crop?",
+      question: "How do I know which product suits my crop?",
       answer:
         "Our technical support team can help you choose the right product based on your crop, pest/disease challenges, and farming practices. You can reach out via phone, WhatsApp, or our contact form.",
     },
     {
       id: "02",
-      question: "Can I get specialized help for usage guidance?",
+      question: "Can I send photos of my crop for guidance?",
       answer:
         "Absolutely. We provide field demonstrations, training sessions, and one-on-one consultations to help farmers use our products effectively. Contact us to schedule a visit or virtual consultation.",
     },
     {
       id: "03",
-      question: "I faced an issue, who can I reach out to?",
+      question: "How fast will support respond?",
       answer:
         "For any product issues, concerns, or questions, contact our customer support team via phone at +91 25897 25687, email at info@vyomalifesciences.com, or through the contact form on our website. We're here to help!",
     },

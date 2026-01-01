@@ -13,6 +13,7 @@ export default function AboutPage() {
     <div>
       <HeroSection />
       <AboutSection
+        id="about-section"
         tag="Who We Are"
         title={
           <>

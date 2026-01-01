@@ -47,7 +47,7 @@ const FAQAccordion = ({
               </div>
             )}
             {sectionTitle && (
-              <h2 className="text-4xl lg:text-[56px] leading-[65px] font-normal text-[#0A0A0A] pb-[50px] border-b border-[#0A0A0A]">
+              <h2 className="text-3xl lg:text-[56px] leading-[65px] font-normal text-[#0A0A0A] pb-[50px] border-b border-[#0A0A0A]">
                 {sectionTitle}
               </h2>
             )}

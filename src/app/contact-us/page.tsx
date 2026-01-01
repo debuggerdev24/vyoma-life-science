@@ -20,7 +20,7 @@ const page = () => {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="w-full rounded-lg shadow-md"
+            className="w-full shadow-md"
           ></iframe>
         </div>
       </div>

@@ -67,7 +67,7 @@ const EasyUnderstanding = () => {
             <p className="text-[#0A0A0AB2] text-sm font-semibold leading-[150%]">
               Product Snapshot
             </p>
-            <div className="text-[#0A0A0A] text-3xl md:text-4xl lg:text-[56px] font-normal leading-tight md:leading-snug lg:leading-[65px] mb-[10px]">
+            <div className="text-[#0A0A0A] text-[22px] md:text-4xl lg:text-[56px] font-normal leading-tight md:leading-snug lg:leading-[65px] mb-[10px]">
               Quick Details for Easy Understanding
             </div>
             <div className="text-[#0A0A0A] text-base font-normal opacity-60 leading-[150%]">
