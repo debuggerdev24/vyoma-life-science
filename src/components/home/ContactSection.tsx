@@ -315,28 +315,38 @@ const ContactSection = () => {
                   <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
                     State
                   </label>
-                  <select
-                    value={state}
-                    onChange={(e) => setState(e.target.value)}
-                    onBlur={(e) => handleBlur("state", e.target.value)}
-                    className={`w-full px-4 py-3 bg-white border rounded text-sm
-                      focus:outline-none transition-colors
-                      ${state === "" ? "text-gray-500" : "text-[#0A0A0A]"}
-                      ${
+
+                  <div className="relative w-full max-w-[283px] mx-auto mt-auto border border-[#DDDDDD]">
+                    <select
+                      value={state}
+                      onChange={(e) => setState(e.target.value)}
+                      onBlur={(e) => handleBlur("state", e.target.value)}
+                      className={`w-full bg-white px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                        state === "" ? "text-gray-500" : "text-[#0A0A0A]"
+                      } ${
                         errors.state
                           ? "border-red-500 focus:border-red-500"
                           : "border-gray-300 focus:border-[#1F4E3D]"
-                      }
-                    `}
-                  >
-                    <option value="" disabled>
-                      Select your state
-                    </option>
-                    <option value="Maharashtra">Maharashtra</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Gujarat">Gujarat</option>
-                    <option value="Punjab">Punjab</option>
-                  </select>
+                      }`}
+                    >
+                      <option value="" disabled>
+                        Select your state
+                      </option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Punjab">Punjab</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                      <svg
+                        className="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                      </svg>
+                    </div>
+                  </div>
                   {errors.state && (
                     <p className="text-red-500 text-xs mt-1">{errors.state}</p>
                   )}
@@ -345,28 +355,37 @@ const ContactSection = () => {
                   <label className="block text-[#0A0A0A] text-sm font-medium mb-1">
                     Crop
                   </label>
-                  <select
-                    value={crop}
-                    onChange={(e) => setCrop(e.target.value)}
-                    onBlur={(e) => handleBlur("crop", e.target.value)}
-                    className={`w-full px-4 py-3 bg-white border rounded text-sm
-                      focus:outline-none transition-colors
-                      ${crop === "" ? "text-gray-500" : "text-black"}
-                      ${
+                  <div className="relative w-full max-w-[283px] mx-auto mt-auto border border-[#DDDDDD]">
+                    <select
+                      value={crop}
+                      onChange={(e) => setCrop(e.target.value)}
+                      onBlur={(e) => handleBlur("crop", e.target.value)}
+                      className={`w-full bg-white px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                        crop === "" ? "text-gray-500" : "text-[#0A0A0A]"
+                      } ${
                         errors.crop
                           ? "border-red-500 focus:border-red-500"
                           : "border-gray-300 focus:border-[#1F4E3D]"
-                      }
-                    `}
-                  >
-                    <option value="" disabled>
-                      What crop are you growing?
-                    </option>
-                    <option value="Tommato">Tommato</option>
-                    <option value="Rice">Rice</option>
-                    <option value="Wheat">Wheat</option>
-                    <option value="Cotton">Cotton</option>
-                  </select>
+                      }`}
+                    >
+                      <option value="" disabled>
+                        What crop are you growing?
+                      </option>
+                      <option value="Tommato">Tommato</option>
+                      <option value="Rice">Rice</option>
+                      <option value="Wheat">Wheat</option>
+                      <option value="Cotton">Cotton</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                      <svg
+                        className="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                      </svg>
+                    </div>
+                  </div>
                   {errors.crop && (
                     <p className="text-red-500 text-xs mt-1">{errors.crop}</p>
                   )}

@@ -15,7 +15,7 @@ export default function ProductsDistributorSection() {
             and drive success.
           </p>
           <div className="relative w-full max-w-[283px] mx-auto mt-auto">
-            <select className="w-full bg-white text-gray-500 px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-black">
+            <select className="w-full bg-white text-gray-500 px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black">
               <option>Select your state</option>
               <option>Maharashtra</option>
               <option>Gujarat</option>

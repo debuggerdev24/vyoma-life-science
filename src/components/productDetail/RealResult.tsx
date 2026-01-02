@@ -100,7 +100,7 @@ const RealResult = () => {
               <div className="absolute bg-[#AF2B24] top-5 left-5 w-[68px] px-[10px] py-[9px] text-white text-center text-[12px] leading-3">
                 BEFORE
               </div>
-              <div className="absolute bottom-5 left-5 right-8 text-base leading-[150%] text-white">
+              <div className="w-full max-w-[80%] absolute bottom-5 left-5 right-8 text-xs md:text-base leading-[150%] text-white">
                 Virus-infected leaves with curling, yellowing, and mosaic
                 patterns.
               </div>
@@ -115,7 +115,7 @@ const RealResult = () => {
               <div className="absolute bg-[#115526] top-5 left-5 w-[68px] px-[10px] py-[9px] text-white text-center text-[12px] leading-3">
                 AFTER
               </div>
-              <div className="absolute bottom-5 left-5 right-8 text-base leading-[150%] text-white">
+              <div className="w-full max-w-[80%] absolute bottom-5 left-5 right-8 text-xs md:text-base leading-[150%] text-white">
                 New leaves emerged green and healthy within 10–15 days after
                 MITRA application.
               </div>

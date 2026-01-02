@@ -11,11 +11,13 @@ export default function Footer() {
           {/* Left Column */}
           <div className="max-w-full lg:max-w-[312px]">
             <div className="flex items-center gap-3 mb-4">
-              <img
-                src="/logo-footer.png"
-                alt="VyomaLife"
-                className="w-[145px] h-[26px]"
-              />
+              <Link href="/">
+                <img
+                  src="/logo-footer.png"
+                  alt="VyomaLife"
+                  className="w-[145px] h-[26px]"
+                />
+              </Link>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed mb-6">
               Herbal crop protection solutions for safer, sustainable, and
