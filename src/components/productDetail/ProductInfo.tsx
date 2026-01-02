@@ -31,7 +31,7 @@ const ProductInfo = ({ product }: ProductInfoProps) => {
   // Map original text colors to new text colors for product detail page
   const getCustomTextColor = (originalBgColor: string): string => {
     const textColorMap: { [key: string]: string } = {
-      "bg-[#AF2B24]": "text-[#E74C3C]",
+      "bg-[#AF2B24]": "text-[#AF2B24]",
       "bg-[#115526]": "text-[#27AE60]", // Green text
       "bg-[#B48E1C]": "text-[#F39C12]", // Orange text
       "bg-[#1F5571]": "text-[#3498DB]", // Blue text

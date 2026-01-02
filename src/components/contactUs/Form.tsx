@@ -429,27 +429,38 @@ const Form = () => {
                   <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                     State
                   </label>
-                  <select
-                    value={state}
-                    onChange={(e) => setState(e.target.value)}
-                    onBlur={(e) => handleBlur("state", e.target.value)}
-                    className={`w-full px-4 py-3 bg-white border text-sm focus:outline-none transition-colors ${
-                      state === "" ? "text-[#0A0A0A]/40" : "text-[#0A0A0A]"
-                    } ${
-                      errors.state
-                        ? "border-red-500 focus:border-red-500"
-                        : "border-gray-300 focus:border-[#1F4E3D]"
-                    }`}
-                  >
-                    <option value="" disabled>
-                      Select state
-                    </option>
-                    <option value="Maharashtra">Maharashtra</option>
-                    <option value="Karnataka">Karnataka</option>
-                    <option value="Gujarat">Gujarat</option>
-                    <option value="Punjab">Punjab</option>
-                    <option value="Haryana">Haryana</option>
-                  </select>
+                  <div className="relative w-full border border-[#DDDDDD]">
+                    <select
+                      value={state}
+                      onChange={(e) => setState(e.target.value)}
+                      onBlur={(e) => handleBlur("state", e.target.value)}
+                      className={`w-full px-5 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                        state === "" ? "text-gray-500" : "text-[#0A0A0A]"
+                      } ${
+                        errors.state
+                          ? "border-red-500 focus:border-red-500"
+                          : "border-none"
+                      }`}
+                    >
+                      <option value="" disabled>
+                        Select state
+                      </option>
+                      <option value="Maharashtra">Maharashtra</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Gujarat">Gujarat</option>
+                      <option value="Punjab">Punjab</option>
+                      <option value="Haryana">Haryana</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                      <svg
+                        className="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                      </svg>
+                    </div>
+                  </div>
                   {errors.state && (
                     <p className="text-red-500 text-xs mt-1">{errors.state}</p>
                   )}
@@ -460,27 +471,38 @@ const Form = () => {
                   <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                     City
                   </label>
-                  <select
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                    onBlur={(e) => handleBlur("city", e.target.value)}
-                    className={`w-full px-4 py-3 bg-white border text-sm focus:outline-none transition-colors ${
-                      city === "" ? "text-[#0A0A0A]/40" : "text-[#0A0A0A]"
-                    } ${
-                      errors.city
-                        ? "border-red-500 focus:border-red-500"
-                        : "border-gray-300 focus:border-[#1F4E3D]"
-                    }`}
-                  >
-                    <option value="" disabled>
-                      Select city
-                    </option>
-                    <option value="Mumbai">Mumbai</option>
-                    <option value="Pune">Pune</option>
-                    <option value="Bangalore">Bangalore</option>
-                    <option value="Ahmedabad">Ahmedabad</option>
-                    <option value="Ludhiana">Ludhiana</option>
-                  </select>
+                  <div className="relative w-full border border-[#DDDDDD]">
+                    <select
+                      value={city}
+                      onChange={(e) => setCity(e.target.value)}
+                      onBlur={(e) => handleBlur("city", e.target.value)}
+                      className={`w-full px-5 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                        city === "" ? "text-gray-500" : "text-[#0A0A0A]"
+                      } ${
+                        errors.city
+                          ? "border-red-500 focus:border-red-500"
+                          : "border-none"
+                      }`}
+                    >
+                      <option value="" disabled>
+                        Select city
+                      </option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Pune">Pune</option>
+                      <option value="Bangalore">Bangalore</option>
+                      <option value="Ahmedabad">Ahmedabad</option>
+                      <option value="Ludhiana">Ludhiana</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                      <svg
+                        className="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                      </svg>
+                    </div>
+                  </div>
                   {errors.city && (
                     <p className="text-red-500 text-xs mt-1">{errors.city}</p>
                   )}
@@ -491,26 +513,37 @@ const Form = () => {
                   <label className="block text-[#0A0A0A] text-[14px] leading-[150%] font-medium mb-[5px]">
                     Village
                   </label>
-                  <select
-                    value={village}
-                    onChange={(e) => setVillage(e.target.value)}
-                    onBlur={(e) => handleBlur("village", e.target.value)}
-                    className={`w-full px-4 py-3 bg-white border text-sm focus:outline-none transition-colors ${
-                      village === "" ? "text-[#0A0A0A]/40" : "text-[#0A0A0A]"
-                    } ${
-                      errors.village
-                        ? "border-red-500 focus:border-red-500"
-                        : "border-gray-300 focus:border-[#1F4E3D]"
-                    }`}
-                  >
-                    <option value="" disabled>
-                      Select village
-                    </option>
-                    <option value="Village 1">Village 1</option>
-                    <option value="Village 2">Village 2</option>
-                    <option value="Village 3">Village 3</option>
-                    <option value="Village 4">Village 4</option>
-                  </select>
+                  <div className="relative w-full border border-[#DDDDDD]">
+                    <select
+                      value={village}
+                      onChange={(e) => setVillage(e.target.value)}
+                      onBlur={(e) => handleBlur("village", e.target.value)}
+                      className={`w-full px-5 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                        village === "" ? "text-gray-500" : "text-[#0A0A0A]"
+                      } ${
+                        errors.village
+                          ? "border-red-500 focus:border-red-500"
+                          : "border-none"
+                      }`}
+                    >
+                      <option value="" disabled>
+                        Select village
+                      </option>
+                      <option value="Village 1">Village 1</option>
+                      <option value="Village 2">Village 2</option>
+                      <option value="Village 3">Village 3</option>
+                      <option value="Village 4">Village 4</option>
+                    </select>
+                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-700">
+                      <svg
+                        className="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                      </svg>
+                    </div>
+                  </div>
                   {errors.village && (
                     <p className="text-red-500 text-xs mt-1">
                       {errors.village}
