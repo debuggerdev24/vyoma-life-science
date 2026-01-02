@@ -321,7 +321,7 @@ const ContactSection = () => {
                       value={state}
                       onChange={(e) => setState(e.target.value)}
                       onBlur={(e) => handleBlur("state", e.target.value)}
-                      className={`w-full bg-white px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                      className={`w-full bg-white px-4 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
                         state === "" ? "text-gray-500" : "text-[#0A0A0A]"
                       } ${
                         errors.state
@@ -360,7 +360,7 @@ const ContactSection = () => {
                       value={crop}
                       onChange={(e) => setCrop(e.target.value)}
                       onBlur={(e) => handleBlur("crop", e.target.value)}
-                      className={`w-full bg-white px-5 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                      className={`w-full bg-white px-4 py-4 text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
                         crop === "" ? "text-gray-500" : "text-[#0A0A0A]"
                       } ${
                         errors.crop

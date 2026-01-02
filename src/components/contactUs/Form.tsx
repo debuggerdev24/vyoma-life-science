@@ -434,7 +434,7 @@ const Form = () => {
                       value={state}
                       onChange={(e) => setState(e.target.value)}
                       onBlur={(e) => handleBlur("state", e.target.value)}
-                      className={`w-full px-5 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                      className={`w-full px-4 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
                         state === "" ? "text-gray-500" : "text-[#0A0A0A]"
                       } ${
                         errors.state
@@ -476,7 +476,7 @@ const Form = () => {
                       value={city}
                       onChange={(e) => setCity(e.target.value)}
                       onBlur={(e) => handleBlur("city", e.target.value)}
-                      className={`w-full px-5 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                      className={`w-full px-4 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
                         city === "" ? "text-gray-500" : "text-[#0A0A0A]"
                       } ${
                         errors.city
@@ -518,7 +518,7 @@ const Form = () => {
                       value={village}
                       onChange={(e) => setVillage(e.target.value)}
                       onBlur={(e) => handleBlur("village", e.target.value)}
-                      className={`w-full px-5 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
+                      className={`w-full px-4 py-4 bg-white text-sm appearance-none cursor-pointer focus:outline-none focus:ring-1 focus:ring-black ${
                         village === "" ? "text-gray-500" : "text-[#0A0A0A]"
                       } ${
                         errors.village
