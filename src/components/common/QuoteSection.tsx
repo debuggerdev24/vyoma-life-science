@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 
@@ -20,6 +22,16 @@ const QuoteSection: React.FC<QuoteSectionProps> = ({
   primaryButtonLink,
   secondaryButtonLink,
 }) => {
+  // Handle brochure download
+  const handleDownloadBrochure = () => {
+    // Create a link element and trigger download
+    const link = document.createElement("a");
+    link.href = "/product-brochure.pdf"; // PDF file should be in the public folder
+    link.download = "Vyoma-Life-Sciences-Brochure.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="relative w-full overflow-hidden">
       {/* Background Image with Overlay */}
@@ -67,7 +79,14 @@ const QuoteSection: React.FC<QuoteSectionProps> = ({
                   </button>
                 </Link>
               ) : (
-                <button className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium text-sm transition-colors">
+                <button
+                  onClick={
+                    secondaryButtonText === "Download Brochure"
+                      ? handleDownloadBrochure
+                      : undefined
+                  }
+                  className="px-6 py-3 bg-white hover:bg-gray-100 text-black font-medium text-sm transition-colors"
+                >
                   {secondaryButtonText}
                 </button>
               )}

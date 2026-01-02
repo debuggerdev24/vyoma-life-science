@@ -3,8 +3,6 @@ import LogosSection from "@/components/common/LogosSection";
 import QuoteSection from "@/components/common/QuoteSection";
 import Content from "@/components/FAQs/Content";
 
-import React from "react";
-
 const page = () => {
   return (
     <div>
