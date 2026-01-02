@@ -172,7 +172,7 @@ export default function Footer() {
         <img
           src="/logo-footer.png"
           alt="logo"
-          className="w-full h-[199px] opacity-10 absolute -bottom-14 pointer-events-none"
+          className="w-full h-full max-h-[199px] opacity-10 absolute -bottom-[85px] md:-bottom-14 pointer-events-none object-contain"
         />
         <div className="text-center text-white text-sm border-t border-gray-700 pt-5 pb-6 relative z-10">
           © {new Date().getFullYear()} VyomaLife Services — All Rights Reserved.
